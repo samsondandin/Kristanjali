@@ -263,7 +263,7 @@
         <a href="#schedule" class="hover:text-[#E4D2A8] py-2 transition-colors">Schedule</a>
         <a href="#prizes" class="hover:text-[#E4D2A8] py-2 transition-colors">Prizes</a>
         <a href="#guidelines" class="hover:text-[#E4D2A8] py-2 transition-colors">Guidelines</a>
-        <a href="#chronicles" class="hover:text-[#E4D2A8] py-2 transition-colors">Chronicles</a>
+        <a href="#gallery" class="hover:text-[#E4D2A8] py-2 transition-colors">Photo Gallery</a>
         <a href="#patrons" class="hover:text-[#E4D2A8] py-2 transition-colors">Patrons</a>
         <a href="#contact" class="hover:text-[#E4D2A8] py-2 transition-colors">Contact</a>
       </div>
@@ -329,7 +329,7 @@
           <a href="#schedule" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Evening Schedule (5:00 PM)</a>
           <a href="#prizes" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Championship Prizes</a>
           <a href="#guidelines" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Guidelines & Rulebook</a>
-          <a href="#chronicles" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Chronicles (2024–Present)</a>
+          <a href="#gallery" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Photo Gallery</a>
           <a href="#patrons" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Sponsors & Namma Kitchen</a>
           <a href="#contact" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Organizing Committee</a>
         </nav>
@@ -977,33 +977,34 @@
     </section>
 
     <!-- =====================================================================
-         SECTION 6: CHRONICLES GALLERY 2024–PRESENT (WARM IVORY #F4EEE3)
+         SECTION 6: PHOTO GALLERY (WARM IVORY #F4EEE3)
     ====================================================================== -->
-    <section id="chronicles" class="bg-[#F4EEE3] text-[#17110F] py-16 sm:py-24 px-4 sm:px-8 border-t border-[#26090E]/15">
-      <div class="max-w-6xl mx-auto reveal-section">
+    <section id="gallery" class="bg-[#F4EEE3] text-[#17110F] py-16 sm:py-24 px-4 sm:px-8 border-t border-[#26090E]/15">
+      <span id="chronicles" class="block -mt-24 pt-24"></span>
+      <div class="max-w-7xl mx-auto reveal-section">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <p class="font-sans text-xs font-semibold tracking-[0.16em] text-[#42131B] uppercase">
-              Festival Archive
+              Parish Memories &amp; Moments
             </p>
             <h2 class="mt-2 font-display text-2xl sm:text-4xl font-semibold text-[#26090E]">
-              KRISTANJALI Chronicles (2024–Present)
+              Photo Gallery
             </h2>
+            <p class="mt-1.5 text-xs sm:text-sm text-[#17110F]/75">
+              Explore the complete photographic collection: festive moments, choir rehearsals, sanctuary stages, and highlight reels.
+            </p>
           </div>
 
-          <!-- Edition Filter Pills -->
+          <!-- Gallery Filter Pills -->
           <div class="flex flex-wrap gap-2">
             <button type="button" onclick="filterChronicles('all')" data-filter="all" data-chime class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-semibold bg-[#26090E] text-[#E4D2A8]">
-              All Editions
+              All Photos &amp; Videos
             </button>
             <button type="button" onclick="filterChronicles('2026')" data-filter="2026" data-chime class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
-              2K26 Poster
+              2K26 Moments
             </button>
             <button type="button" onclick="filterChronicles('2025')" data-filter="2025" data-chime class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
-              2025 Grand Carols
-            </button>
-            <button type="button" onclick="filterChronicles('2024')" data-filter="2024" data-chime class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
-              2024 Inaugural
+              2025 Editions
             </button>
             <button type="button" onclick="filterChronicles('video')" data-filter="video" data-chime class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
               Live Videos
@@ -1011,14 +1012,14 @@
           </div>
         </div>
 
-        <!-- Photograph-First Editorial Gallery Grid -->
-        <div id="chronicles-bento-grid" class="mt-8 grid grid-cols-1 md:grid-cols-12 gap-6"></div>
+        <!-- Photograph-First Editorial Gallery Grid (All Photos in One Gallery) -->
+        <div id="chronicles-bento-grid" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
 
         <!-- 27-Slot Lightbox Archive Bar -->
         <div class="mt-8 surface-ivory rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <h3 class="font-sans text-sm font-semibold text-[#26090E]">
-              Complete Parish Photo &amp; Video Archive (27 Curated Slots)
+              Complete Parish Photo &amp; Video Gallery
             </h3>
             <p class="text-xs text-[#17110F]/75 mt-0.5">
               Open the touch-swipeable Lightbox to browse 2024 Inaugural moments, 2025 Grand Carols photos &amp; live stage reels, and the 2K26 Official Poster.
@@ -1138,28 +1139,9 @@
           </p>
         </div>
 
-        <!-- 4-Column Organizing Committee Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <!-- Contact Card 1: Fr. Joe -->
-          <div class="surface-wine rounded-xl p-5 flex flex-col justify-between">
-            <div>
-              <span class="font-sans text-[11px] font-medium text-[#B99A58] uppercase tracking-wider">
-                Parish Priest &amp; Spiritual Director
-              </span>
-              <h3 class="mt-1 font-display text-xl font-semibold text-[#E4D2A8]">Fr. Joe</h3>
-              <p class="mt-0.5 font-sans text-sm text-[#F4EEE3]">+91 96636 47158</p>
-            </div>
-            <div class="mt-4 grid grid-cols-2 gap-2.5">
-              <a href="tel:+919663647158" class="min-h-[44px] px-3 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs flex items-center justify-center transition-colors">
-                Call
-              </a>
-              <a href="https://wa.me/919663647158?text=Blessings%20Fr.%20Joe%2C%20we%20have%20an%20inquiry%20regarding%20KRISTANJALI%20at%20OLPS%20Church%2C%20Dharwad." target="_blank" rel="noopener" class="min-h-[44px] px-3 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs flex items-center justify-center transition-colors">
-                WhatsApp
-              </a>
-            </div>
-          </div>
-
-          <!-- Contact Card 2: Mr. Winston -->
+        <!-- 3-Column Organizing Committee Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Contact Card 1: Mr. Winston -->
           <div class="surface-wine rounded-xl p-5 flex flex-col justify-between">
             <div>
               <span class="font-sans text-[11px] font-medium text-[#B99A58] uppercase tracking-wider">
@@ -1178,7 +1160,7 @@
             </div>
           </div>
 
-          <!-- Contact Card 3: Mr. Bosco -->
+          <!-- Contact Card 2: Mr. Bosco -->
           <div class="surface-wine rounded-xl p-5 flex flex-col justify-between">
             <div>
               <span class="font-sans text-[11px] font-medium text-[#B99A58] uppercase tracking-wider">
@@ -1197,7 +1179,7 @@
             </div>
           </div>
 
-          <!-- Contact Card 4: Samson (Website Inquiries) -->
+          <!-- Contact Card 3: Samson (Website Inquiries) -->
           <div class="surface-wine rounded-xl p-5 flex flex-col justify-between">
             <div>
               <span class="font-sans text-[11px] font-medium text-[#B99A58] uppercase tracking-wider">
@@ -1338,7 +1320,7 @@
       <!-- Messages Feed -->
       <div id="concierge-messages" class="p-3.5 h-64 overflow-y-auto space-y-2.5 text-xs font-sans">
         <div class="p-3 rounded-lg bg-[#42131B]/85 border border-[#B99A58]/25 text-[#F4EEE3] leading-relaxed">
-          Peace &amp; blessings! Ask me anything about <strong>KRISTANJALI 2K26</strong>—schedule &amp; 5:00 PM soundcheck, registration, prizes, rules, venue directions, or contacts (Fr. Joe, Mr. Winston &amp; Samson).
+          Peace &amp; blessings! Ask me anything about <strong>KRISTANJALI 2K26</strong>—schedule &amp; 5:00 PM soundcheck, registration, prizes, rules, venue directions, or contacts (Mr. Winston, Mr. Bosco &amp; Samson).
         </div>
       </div>
 
@@ -1494,7 +1476,7 @@
       </div>
 
       <div class="pt-4 mt-5 border-t border-[#B99A58]/20 flex justify-between items-center text-xs text-[#F4EEE3]/70">
-        <span>Queries: Fr. Joe / Mr. Winston / Mr. Bosco • Web: Samson (7619687402)</span>
+        <span>Queries: Mr. Winston / Mr. Bosco • Web: Samson (7619687402)</span>
         <button type="button" onclick="closeAllModals()" class="underline text-[#E4D2A8] min-h-[40px] px-2">Close</button>
       </div>
     </div>
@@ -1604,7 +1586,6 @@
       driveRulebookPreviewUrl: "https://drive.google.com/file/d/1jkMxcWv9qRo2ZIRVvXf-uzV57PH_MueJ/preview",
       nammaKitchenLogoUrl: "https://lh3.googleusercontent.com/d/1_z_gXfHeXUU88KMhegH4Pg2AR3jur6hD",
       contacts: {
-        priest: { name: "Fr. Joe", role: "Parish Priest & Spiritual Director", phone: "+91 96636 47158", wa: "919663647158" },
         coordinator: { name: "Mr. Winston", role: "Event Coordinator • OLPS Youth", phone: "+91 91106 97931", wa: "919110697931" },
         treasurer: { name: "Mr. Bosco", role: "Registration & Payments", phone: "+91 80731 28308", wa: "918073128308" },
         website: { name: "Samson", role: "Website Inquiries & Digital Desk", phone: "+91 76196 87402", wa: "917619687402" }
@@ -2283,102 +2264,56 @@
       const grid = document.getElementById("chronicles-bento-grid");
       if (!grid) return;
 
+      // Pull all active gallery photos and videos with valid imageUrl
+      let slots = EVENT_CONFIG.gallerySlots.filter((s) => s.imageUrl && s.imageUrl.trim() !== "");
+
       if (filterKey === "video") {
-        const videoSlots = EVENT_CONFIG.gallerySlots.filter((s) => s.mediaType === "video");
-        grid.innerHTML = videoSlots.map((slot) => {
-          const idx = EVENT_CONFIG.gallerySlots.findIndex((x) => x.id === slot.id);
-          return `
-            <article onclick="openLightbox(${idx})" class="md:col-span-6 cursor-pointer group surface-ivory rounded-xl p-5 flex flex-col justify-between hover:border-[#B99A58] transition-colors">
-              <div>
-                <div class="relative w-full h-52 rounded-lg overflow-hidden mb-4 bg-[#26090E]">
-                  <img src="${slot.imageUrl}" alt="${slot.title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" />
-                  <span class="absolute inset-0 bg-[#17110F]/45 flex items-center justify-center">
-                    <span class="w-12 h-12 rounded-full bg-[#B99A58] text-[#17110F] text-sm font-bold flex items-center justify-center">▶</span>
-                  </span>
-                </div>
-                <span class="font-sans text-[11px] font-semibold tracking-wider text-[#42131B] uppercase">
-                  ${slot.edition} Live Stage Video
-                </span>
-                <h3 class="mt-1.5 font-display text-lg sm:text-xl font-semibold text-[#26090E] group-hover:text-[#42131B]">
-                  ${slot.title}
-                </h3>
-                <p class="mt-2 text-xs sm:text-sm text-[#17110F]/80 leading-relaxed">
-                  ${slot.caption}
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-[#26090E]/12 flex items-center justify-between text-xs font-sans font-medium text-[#42131B]">
-                <span>Play Highlight Reel</span>
-                <span>→</span>
-              </div>
-            </article>
-          `;
-        }).join("");
-        return;
+        slots = slots.filter((s) => s.mediaType === "video");
+      } else if (filterKey !== "all") {
+        slots = slots.filter((s) => s.edition === filterKey);
       }
 
-      const items = filterKey === "all"
-        ? EVENT_CONFIG.featuredChronicles
-        : EVENT_CONFIG.featuredChronicles.filter((c) => c.year === filterKey);
-
-      const cardsHtml = items.map((item) => {
-        const slot = EVENT_CONFIG.gallerySlots[item.slotIndex];
-        const photoPreview = slot && slot.imageUrl
-          ? `<div class="w-full h-48 rounded-lg overflow-hidden mb-4 bg-[#26090E]">
-               <img src="${slot.imageUrl}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" />
-             </div>`
-          : `<div class="w-full h-36 rounded-lg bg-[#26090E] text-[#E4D2A8] mb-4 flex flex-col items-center justify-center p-4 text-center">
-               <span class="font-display text-lg">✝</span>
-               <span class="mt-1 font-sans text-[11px] text-[#F4EEE3]/75">${slot ? slot.title : item.tag}</span>
-             </div>`;
-
+      grid.innerHTML = slots.map((slot) => {
+        const idx = EVENT_CONFIG.gallerySlots.findIndex((x) => x.id === slot.id);
+        const isVideo = slot.mediaType === "video";
         return `
-          <article onclick="openLightbox(${item.slotIndex})" class="${filterKey === 'all' ? item.span : 'md:col-span-6'} cursor-pointer group surface-ivory rounded-xl p-5 flex flex-col justify-between hover:border-[#B99A58] transition-colors">
+          <article onclick="openLightbox(${idx})" class="cursor-pointer group surface-ivory rounded-xl p-4 flex flex-col justify-between hover:border-[#B99A58] border border-[#26090E]/10 transition-all duration-200 hover:-translate-y-1 shadow-sm">
             <div>
-              ${photoPreview}
-              <span class="font-sans text-[11px] font-semibold tracking-wider text-[#42131B] uppercase">
-                ${item.tag}
-              </span>
-              <h3 class="mt-1.5 font-display text-lg sm:text-xl font-semibold text-[#26090E] group-hover:text-[#42131B]">
-                ${item.title}
+              <div class="relative aspect-[4/3] w-full rounded-lg overflow-hidden mb-3 bg-[#26090E]">
+                <img
+                  src="${slot.imageUrl}"
+                  alt="${slot.title}"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1543258103-a62bdc069871?auto=format&fit=crop&w=800&q=80'"
+                />
+                ${isVideo ? `
+                  <span class="absolute inset-0 bg-[#17110F]/45 flex items-center justify-center">
+                    <span class="w-11 h-11 rounded-full bg-[#B99A58] text-[#17110F] text-sm font-bold flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">▶</span>
+                  </span>
+                  <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-[#26090E]/85 text-[10px] font-sans font-semibold text-[#E4D2A8] uppercase tracking-wider">
+                    Video Reel
+                  </span>
+                ` : `
+                  <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-[#26090E]/85 text-[10px] font-sans font-semibold text-[#E4D2A8] uppercase tracking-wider">
+                    ${slot.edition} Edition
+                  </span>
+                `}
+              </div>
+              <h3 class="font-display text-base font-semibold text-[#26090E] group-hover:text-[#42131B] line-clamp-1">
+                ${slot.title}
               </h3>
-              <p class="mt-2 text-xs sm:text-sm text-[#17110F]/80 leading-relaxed">
-                ${item.desc}
+              <p class="mt-1 text-xs text-[#17110F]/75 line-clamp-2 leading-relaxed">
+                ${slot.caption || slot.title}
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-[#26090E]/12 flex items-center justify-between text-xs font-sans font-medium text-[#42131B]">
-              <span>View in Lightbox</span>
+            <div class="mt-3 pt-2.5 border-t border-[#26090E]/10 flex items-center justify-between text-xs font-sans font-medium text-[#42131B] group-hover:text-[#B99A58]">
+              <span>${isVideo ? "Watch Highlight" : "View Photo"}</span>
               <span>→</span>
             </div>
           </article>
         `;
       }).join("");
-
-      const filteredStripSlots = filterKey === "all"
-        ? EVENT_CONFIG.gallerySlots.slice(3, 10)
-        : EVENT_CONFIG.gallerySlots.filter((s) => s.edition === filterKey && s.imageUrl);
-
-      const secondaryPhotosHtml = filteredStripSlots.length > 0 ? `
-        <div class="md:col-span-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3 pt-2">
-          ${filteredStripSlots.map((slot) => {
-            const idx = EVENT_CONFIG.gallerySlots.findIndex((x) => x.id === slot.id);
-            return `
-              <button type="button" onclick="openLightbox(${idx})" class="group text-left surface-ivory rounded-lg p-2 hover:border-[#B99A58] transition-colors">
-                <div class="relative aspect-[4/3] w-full rounded overflow-hidden bg-[#26090E]">
-                  <img src="${slot.imageUrl}" alt="${slot.title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300" />
-                  ${slot.mediaType === "video" ? `
-                    <span class="absolute inset-0 bg-[#17110F]/45 flex items-center justify-center">
-                      <span class="w-8 h-8 rounded-full bg-[#B99A58] text-[#17110F] text-xs font-bold flex items-center justify-center">▶</span>
-                    </span>
-                  ` : ""}
-                </div>
-                <p class="mt-1.5 font-sans text-[11px] font-medium text-[#26090E] line-clamp-1">${slot.title}</p>
-              </button>
-            `;
-          }).join("")}
-        </div>
-      ` : "";
-
-      grid.innerHTML = cardsHtml + secondaryPhotosHtml;
     }
 
     function filterChronicles(filterKey) {
@@ -2606,10 +2541,9 @@
     function buildConciergeReply(query) {
       const q = query.toLowerCase();
 
-      if (q.includes("samson") || q.includes("website") || q.includes("contact") || q.includes("joe") || q.includes("winston") || q.includes("bosco") || q.includes("payment") || q.includes("pay") || q.includes("upi") || q.includes("phone") || q.includes("call")) {
+      if (q.includes("samson") || q.includes("website") || q.includes("contact") || q.includes("winston") || q.includes("bosco") || q.includes("payment") || q.includes("pay") || q.includes("upi") || q.includes("phone") || q.includes("call")) {
         return `
           <strong>Organizing Committee Contacts:</strong><br/>
-          • <strong>Fr. Joe</strong> (Parish Priest): <a href="tel:+919663647158" class="underline text-[#E4D2A8]">+91 96636 47158</a><br/>
           • <strong>Mr. Winston</strong> (Event Coordinator • PhonePe): <a href="tel:+919110697931" class="underline text-[#E4D2A8]">+91 91106 97931</a><br/>
           • <strong>Mr. Bosco</strong> (Registration &amp; Payments): <a href="tel:+918073128308" class="underline text-[#E4D2A8]">+91 80731 28308</a><br/>
           • <strong>Samson</strong> (Website Inquiries): <a href="tel:+917619687402" class="underline text-[#E4D2A8]">+91 76196 87402</a>
@@ -2649,7 +2583,7 @@
         <strong>KRISTANJALI 2K26 — An Evening of Carols</strong><br/>
         • <strong>Date &amp; Time:</strong> Sat, 19 Dec 2026 • Reporting &amp; Soundcheck from <strong>05:00 PM</strong>, Carols at <strong>06:00 PM</strong><br/>
         • <strong>Registration:</strong> Closes 14th Dec, 2026 (₹999/-)<br/>
-        • <strong>Contacts:</strong> Fr. Joe (+91 96636 47158), Mr. Winston (+91 91106 97931), Mr. Bosco (+91 80731 28308), Samson (+91 76196 87402).
+        • <strong>Contacts:</strong> Mr. Winston (+91 91106 97931), Mr. Bosco (+91 80731 28308), Samson (+91 76196 87402).
       `;
     }
 
