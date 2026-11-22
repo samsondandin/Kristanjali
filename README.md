@@ -1,6 +1,6 @@
-# KRISTANJALI — An Evening of Carols | OLPS Church, Dharwad
+# KRISTANJALI Season 3 (2K26) — An Evening of Carols | OLPS Church, Dharwad
 
-Official website for **KRISTANJALI 2K26 — An Evening of Carols**, presented by Our Lady of Perpetual Succour (OLPS) Church, Dharwad.
+Here is **KRISTANJALI Season 3 (2K26) — An Evening of Carols**, presented by Our Lady of Perpetual Succour (OLPS) Church, Dharwad.
 
 - **Live Website**: [https://samsondandin.github.io/Kristanjali/](https://samsondandin.github.io/Kristanjali/)
 - **Date & Time**: Saturday, 19 December 2026 | Reporting & Soundcheck: 5:00 PM – 6:00 PM | Carols Begin: 6:00 PM
