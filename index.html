@@ -228,6 +228,13 @@
         padding: 32px !important;
       }
     }
+    @keyframes teaserFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    .animate-teaser-float {
+      animation: teaserFloat 3.2s ease-in-out infinite;
+    }
   </style>
 </head>
 <body class="antialiased selection:bg-[#B99A58] selection:text-[#17110F]">
@@ -1282,6 +1289,40 @@
        FLOATING KRISTANJALI EVENT CONCIERGE CHAT BOX
   ========================================================================== -->
   <div id="concierge-widget" class="fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-40">
+    <!-- Interactive Pop-up Teaser Bubble -->
+    <div
+      id="concierge-teaser-bubble"
+      class="mb-2.5 max-w-[270px] sm:max-w-[310px] ml-auto relative rounded-xl bg-[#26090E]/95 border border-[#B99A58]/55 shadow-2xl shadow-[#17110F]/80 p-3.5 backdrop-blur-md transition-all duration-300 animate-teaser-float"
+    >
+      <div class="flex items-start justify-between gap-2">
+        <div class="cursor-pointer group" onclick="toggleConciergeChat(true)">
+          <div class="flex items-center gap-1.5 mb-1">
+            <span class="w-2 h-2 rounded-full bg-[#B99A58] animate-ping"></span>
+            <span class="font-sans text-[10px] font-semibold tracking-wider text-[#B99A58] uppercase">
+              OLPS Digital Desk
+            </span>
+          </div>
+          <p class="font-sans text-xs font-medium text-[#F4EEE3] leading-snug">
+            If you have any doubts, you can ask me here — let's chat!
+          </p>
+          <span class="inline-flex items-center gap-1 mt-2 font-sans text-[11px] font-semibold text-[#E4D2A8] group-hover:text-white transition-colors">
+            Ask a question <span>→</span>
+          </span>
+        </div>
+        <button
+          type="button"
+          onclick="event.stopPropagation(); dismissConciergeTeaser();"
+          aria-label="Dismiss message"
+          title="Dismiss"
+          class="text-[#F4EEE3]/50 hover:text-[#E4D2A8] text-xs p-1 -mr-1 -mt-1 transition-colors"
+        >
+          ✕
+        </button>
+      </div>
+      <!-- Triangle Pointer Indicator pointing to Ask KRISTANJALI button -->
+      <div class="absolute -bottom-1.5 right-6 w-3 h-3 bg-[#26090E] border-r border-b border-[#B99A58]/55 rotate-45"></div>
+    </div>
+
     <!-- Launcher Button -->
     <button
       type="button"
@@ -2509,13 +2550,22 @@
     function toggleConciergeChat(forceState) {
       const panel = document.getElementById("concierge-panel");
       const btn = document.getElementById("concierge-toggle-btn");
+      const teaser = document.getElementById("concierge-teaser-bubble");
       if (!panel || !btn) return;
       const shouldOpen = typeof forceState === "boolean" ? forceState : panel.classList.contains("hidden");
       panel.classList.toggle("hidden", !shouldOpen);
       btn.setAttribute("aria-expanded", String(shouldOpen));
+      if (teaser && shouldOpen) {
+        teaser.classList.add("hidden");
+      }
       if (shouldOpen) {
         document.getElementById("concierge-input")?.focus();
       }
+    }
+
+    function dismissConciergeTeaser() {
+      const teaser = document.getElementById("concierge-teaser-bubble");
+      if (teaser) teaser.classList.add("hidden");
     }
 
     function appendConciergeBubble(text, sender = "bot") {
