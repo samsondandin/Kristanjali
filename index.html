@@ -1498,46 +1498,72 @@
   ========================================================================== -->
 
   <!-- Compact Interactive Pop-up Teaser Bubble -->
-  <div id="concierge-teaser-bubble"
-    class="mb-2 max-w-[220px] sm:max-w-[240px] ml-auto relative rounded-lg bg-[#26090E]/95 border border-[#B99A58]/55 shadow-xl shadow-[#17110F]/70 p-2.5 backdrop-blur-md transition-all duration-300 animate-teaser-float">
+  <div id="concierge-teaser-bubble" class="mb-2 ml-auto w-fit max-w-[190px] relative rounded-lg
+         bg-[#26090E]/95 border border-[#B99A58]/55
+         shadow-xl shadow-[#17110F]/70 p-2
+         backdrop-blur-md transition-all duration-300 animate-teaser-float">
 
-    <div class="flex items-start justify-between gap-1.5">
-      <div class="cursor-pointer group" onclick="toggleConciergeChat(true)">
-        <div class="flex items-center gap-1 mb-0.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-[#B99A58] animate-ping"></span>
-          <span class="font-sans text-[9px] font-semibold tracking-wider text-[#B99A58] uppercase">
+    <div class="flex items-start justify-between gap-2">
+
+      <!-- Teaser Content -->
+      <div class="min-w-0 cursor-pointer group" onclick="toggleConciergeChat(true)">
+
+        <div class="flex items-center gap-1.5 mb-1">
+          <span class="w-1.5 h-1.5 shrink-0 rounded-full
+                     bg-[#B99A58] animate-ping"></span>
+
+          <span class="font-sans text-[8px] font-semibold
+                     tracking-wider text-[#B99A58] uppercase">
             OLPS Digital Desk
           </span>
         </div>
 
-        <p class="font-sans text-[11px] font-medium text-[#F4EEE3] leading-snug">
+        <p class="font-sans text-[10px] font-medium
+                text-[#F4EEE3] leading-snug">
           Have a question? Let's chat!
         </p>
 
-        <span
-          class="inline-flex items-center gap-1 mt-1.5 font-sans text-[10px] font-semibold text-[#E4D2A8] group-hover:text-white transition-colors">
+        <span class="inline-flex items-center gap-1 mt-1
+                   font-sans text-[9px] font-semibold
+                   text-[#E4D2A8] group-hover:text-white
+                   transition-colors">
           Ask a question <span>→</span>
         </span>
       </div>
 
+      <!-- Dismiss Button -->
       <button type="button" onclick="event.stopPropagation(); dismissConciergeTeaser();" aria-label="Dismiss message"
-        title="Dismiss" class="text-[#F4EEE3]/50 hover:text-[#E4D2A8] text-[10px] p-1 -mr-1 -mt-1 transition-colors">
+        title="Dismiss" class="shrink-0 text-[#F4EEE3]/50 hover:text-[#E4D2A8]
+             text-[9px] p-0.5 transition-colors">
         ✕
       </button>
+
     </div>
 
-    <div class="absolute -bottom-1.5 right-6 w-3 h-3 bg-[#26090E] border-r border-b border-[#B99A58]/55 rotate-45">
+    <!-- Speech Bubble Pointer -->
+    <div class="absolute -bottom-1.5 right-5 w-3 h-3
+              bg-[#26090E] border-r border-b
+              border-[#B99A58]/55 rotate-45">
     </div>
   </div>
 
 
   <!-- Launcher Button -->
   <button type="button" id="concierge-toggle-btn" onclick="toggleConciergeChat()" aria-expanded="false"
-    aria-controls="concierge-panel"
-    class="min-h-[46px] px-4 rounded-full bg-[#42131B] hover:bg-[#26090E] border border-[#B99A58]/60 text-[#E4D2A8] shadow-lg shadow-[#17110F]/60 flex items-center gap-2.5 font-sans text-xs font-medium transition-colors">
-    <span class="w-2 h-2 rounded-full bg-[#B99A58]"></span>
+    aria-controls="concierge-panel" class="min-h-[40px] ml-auto px-3.5 py-2
+         rounded-full bg-[#42131B] hover:bg-[#26090E]
+         border border-[#B99A58]/60 text-[#E4D2A8]
+         shadow-lg shadow-[#17110F]/60
+         flex items-center justify-center gap-2
+         font-sans text-[11px] font-medium
+         transition-colors">
+
+    <span class="w-1.5 h-1.5 rounded-full
+               bg-[#B99A58]"></span>
+
     <span>Ask KRISTANJALI</span>
   </button>
+
 
   <!-- Chat Panel -->
   <div id="concierge-panel" role="dialog" aria-label="KRISTANJALI Event Concierge"
