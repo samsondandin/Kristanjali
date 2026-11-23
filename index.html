@@ -1493,54 +1493,56 @@
   <!-- =========================================================================
        FLOATING KRISTANJALI EVENT CONCIERGE CHAT BOX
   ========================================================================== -->
-
-  <!-- Compact Interactive Pop-up Teaser Bubble -->
-  <div id="concierge-teaser-bubble" class="mb-2 ml-auto w-fit max-w-[190px] relative rounded-lg
+  <div id="concierge-widget"
+    class="fixed bottom-24 right-4 sm:bottom-6 z-40 flex flex-col items-end w-fit max-w-[calc(100vw-2rem)]">
+    <!-- Compact Interactive Pop-up Teaser Bubble -->
+    <div id="concierge-teaser-bubble" class="mb-2 ml-auto w-fit max-w-[190px] relative rounded-lg
          bg-[#26090E]/95 border border-[#B99A58]/55
          shadow-xl shadow-[#17110F]/70 p-2
          backdrop-blur-md transition-all duration-300 animate-teaser-float">
 
-    <div class="flex items-start justify-between gap-2">
+      <div class="flex items-start justify-between gap-2">
 
-      <!-- Teaser Content -->
-      <div class="min-w-0 cursor-pointer group" onclick="toggleConciergeChat(true)">
+        <!-- Teaser Content -->
+        <div class="min-w-0 cursor-pointer group" onclick="toggleConciergeChat(true)">
 
-        <div class="flex items-center gap-1.5 mb-1">
-          <span class="w-1.5 h-1.5 shrink-0 rounded-full
+          <div class="flex items-center gap-1.5 mb-1">
+            <span class="w-1.5 h-1.5 shrink-0 rounded-full
                      bg-[#B99A58] animate-ping"></span>
 
-          <span class="font-sans text-[8px] font-semibold
+            <span class="font-sans text-[8px] font-semibold
                      tracking-wider text-[#B99A58] uppercase">
-            OLPS Digital Desk
-          </span>
-        </div>
+              OLPS Digital Desk
+            </span>
+          </div>
 
-        <p class="font-sans text-[10px] font-medium
+          <p class="font-sans text-[10px] font-medium
                 text-[#F4EEE3] leading-snug">
-          Have a question? Let's chat!
-        </p>
+            Have a question? Let's chat!
+          </p>
 
-        <span class="inline-flex items-center gap-1 mt-1
+          <span class="inline-flex items-center gap-1 mt-1
                    font-sans text-[9px] font-semibold
                    text-[#E4D2A8] group-hover:text-white
                    transition-colors">
-          Ask a question <span>→</span>
-        </span>
+            Ask a question <span>→</span>
+          </span>
+        </div>
+
+        <!-- Dismiss Button -->
+        <button type="button" onclick="event.stopPropagation(); dismissConciergeTeaser();" aria-label="Dismiss message"
+          title="Dismiss" class="shrink-0 text-[#F4EEE3]/50 hover:text-[#E4D2A8]
+             text-[9px] p-0.5 transition-colors">
+          ✕
+        </button>
+
       </div>
 
-      <!-- Dismiss Button -->
-      <button type="button" onclick="event.stopPropagation(); dismissConciergeTeaser();" aria-label="Dismiss message"
-        title="Dismiss" class="shrink-0 text-[#F4EEE3]/50 hover:text-[#E4D2A8]
-             text-[9px] p-0.5 transition-colors">
-        ✕
-      </button>
-
-    </div>
-
-    <!-- Speech Bubble Pointer -->
-    <div class="absolute -bottom-1.5 right-5 w-3 h-3
+      <!-- Speech Bubble Pointer -->
+      <div class="absolute -bottom-1.5 right-5 w-3 h-3
               bg-[#26090E] border-r border-b
               border-[#B99A58]/55 rotate-45">
+      </div>
     </div>
   </div>
 
