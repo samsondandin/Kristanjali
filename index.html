@@ -1529,10 +1529,8 @@
           </span>
         </div>
 
-        <!-- Dismiss Button -->
-        <button type="button" onclick="event.stopPropagation(); dismissConciergeTeaser();" aria-label="Dismiss message"
-          title="Dismiss" class="shrink-0 text-[#F4EEE3]/50 hover:text-[#E4D2A8]
-             text-[9px] p-0.5 transition-colors">
+        <button type="button" id="concierge-dismiss-btn" aria-label="Dismiss message" title="Dismiss" class="shrink-0 text-[#F4EEE3]/50 hover:text-[#E4D2A8]
+  text-[9px] p-0.5 transition-colors">
           ✕
         </button>
 
@@ -3007,10 +3005,25 @@
     function dismissConciergeTeaser() {
       const teaser = document.getElementById("concierge-teaser-bubble");
 
-      if (teaser) {
-        teaser.classList.add("hidden");
+      if (!teaser) {
+        console.error("Concierge teaser element not found.");
+        return;
       }
+
+      teaser.style.setProperty("display", "none", "important");
     }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const dismissBtn = document.getElementById("concierge-dismiss-btn");
+
+      if (dismissBtn) {
+        dismissBtn.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          dismissConciergeTeaser();
+        });
+      }
+    });
 
     function appendConciergeBubble(text, sender = "bot") {
       const feed = document.getElementById("concierge-messages");
