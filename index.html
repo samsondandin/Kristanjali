@@ -1496,97 +1496,101 @@
   <!-- =========================================================================
        FLOATING KRISTANJALI EVENT CONCIERGE CHAT BOX
   ========================================================================== -->
-  <div id="concierge-widget" class="fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-40">
-    <!-- Interactive Pop-up Teaser Bubble -->
-    <div id="concierge-teaser-bubble"
-      class="mb-2.5 max-w-[270px] sm:max-w-[310px] ml-auto relative rounded-xl bg-[#26090E]/95 border border-[#B99A58]/55 shadow-2xl shadow-[#17110F]/80 p-3.5 backdrop-blur-md transition-all duration-300 animate-teaser-float">
-      <div class="flex items-start justify-between gap-2">
-        <div class="cursor-pointer group" onclick="toggleConciergeChat(true)">
-          <div class="flex items-center gap-1.5 mb-1">
-            <span class="w-2 h-2 rounded-full bg-[#B99A58] animate-ping"></span>
-            <span class="font-sans text-[10px] font-semibold tracking-wider text-[#B99A58] uppercase">
-              OLPS Digital Desk
-            </span>
-          </div>
-          <p class="font-sans text-xs font-medium text-[#F4EEE3] leading-snug">
-            If you have any doubts, you can ask me here — let's chat!
-          </p>
-          <span
-            class="inline-flex items-center gap-1 mt-2 font-sans text-[11px] font-semibold text-[#E4D2A8] group-hover:text-white transition-colors">
-            Ask a question <span>→</span>
+
+  <!-- Compact Interactive Pop-up Teaser Bubble -->
+  <div id="concierge-teaser-bubble"
+    class="mb-2 max-w-[220px] sm:max-w-[240px] ml-auto relative rounded-lg bg-[#26090E]/95 border border-[#B99A58]/55 shadow-xl shadow-[#17110F]/70 p-2.5 backdrop-blur-md transition-all duration-300 animate-teaser-float">
+
+    <div class="flex items-start justify-between gap-1.5">
+      <div class="cursor-pointer group" onclick="toggleConciergeChat(true)">
+        <div class="flex items-center gap-1 mb-0.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#B99A58] animate-ping"></span>
+          <span class="font-sans text-[9px] font-semibold tracking-wider text-[#B99A58] uppercase">
+            OLPS Digital Desk
           </span>
         </div>
-        <button type="button" onclick="event.stopPropagation(); dismissConciergeTeaser();" aria-label="Dismiss message"
-          title="Dismiss" class="text-[#F4EEE3]/50 hover:text-[#E4D2A8] text-xs p-1 -mr-1 -mt-1 transition-colors">
-          ✕
-        </button>
+
+        <p class="font-sans text-[11px] font-medium text-[#F4EEE3] leading-snug">
+          Have a question? Let's chat!
+        </p>
+
+        <span
+          class="inline-flex items-center gap-1 mt-1.5 font-sans text-[10px] font-semibold text-[#E4D2A8] group-hover:text-white transition-colors">
+          Ask a question <span>→</span>
+        </span>
       </div>
-      <!-- Triangle Pointer Indicator pointing to Ask KRISTANJALI button -->
-      <div class="absolute -bottom-1.5 right-6 w-3 h-3 bg-[#26090E] border-r border-b border-[#B99A58]/55 rotate-45">
+
+      <button type="button" onclick="event.stopPropagation(); dismissConciergeTeaser();" aria-label="Dismiss message"
+        title="Dismiss" class="text-[#F4EEE3]/50 hover:text-[#E4D2A8] text-[10px] p-1 -mr-1 -mt-1 transition-colors">
+        ✕
+      </button>
+    </div>
+
+    <div class="absolute -bottom-1.5 right-6 w-3 h-3 bg-[#26090E] border-r border-b border-[#B99A58]/55 rotate-45">
+    </div>
+  </div>
+
+
+  <!-- Launcher Button -->
+  <button type="button" id="concierge-toggle-btn" onclick="toggleConciergeChat()" aria-expanded="false"
+    aria-controls="concierge-panel"
+    class="min-h-[46px] px-4 rounded-full bg-[#42131B] hover:bg-[#26090E] border border-[#B99A58]/60 text-[#E4D2A8] shadow-lg shadow-[#17110F]/60 flex items-center gap-2.5 font-sans text-xs font-medium transition-colors">
+    <span class="w-2 h-2 rounded-full bg-[#B99A58]"></span>
+    <span>Ask KRISTANJALI</span>
+  </button>
+
+  <!-- Chat Panel -->
+  <div id="concierge-panel" role="dialog" aria-label="KRISTANJALI Event Concierge"
+    class="hidden mt-2 w-[calc(100vw-2rem)] sm:w-[370px] rounded-xl bg-[#26090E] border border-[#B99A58]/50 shadow-2xl shadow-[#17110F]/85 overflow-hidden flex flex-col">
+    <div class="px-4 py-3 bg-[#42131B] border-b border-[#B99A58]/30 flex items-center justify-between">
+      <div>
+        <p class="font-display text-sm font-semibold text-[#E4D2A8]">KRISTANJALI Concierge</p>
+        <p class="font-sans text-[11px] text-[#F4EEE3]/75">OLPS Church, Dharwad • Instant Guide</p>
+      </div>
+      <button type="button" onclick="toggleConciergeChat(false)" aria-label="Close Concierge Chat"
+        class="min-w-[36px] min-h-[36px] rounded-lg bg-[#26090E]/80 border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center text-xs">
+        ✕
+      </button>
+    </div>
+
+    <!-- Messages Feed -->
+    <div id="concierge-messages" class="p-3.5 h-64 overflow-y-auto space-y-2.5 text-xs font-sans">
+      <div class="p-3 rounded-lg bg-[#42131B]/85 border border-[#B99A58]/25 text-[#F4EEE3] leading-relaxed">
+        Peace &amp; blessings! Ask me anything about <strong>KRISTANJALI 2K26</strong>—schedule &amp; 5:00 PM
+        soundcheck, registration, prizes, rules, venue directions, or contacts (Mr. Winston, Mr. Bosco &amp; Samson).
       </div>
     </div>
 
-    <!-- Launcher Button -->
-    <button type="button" id="concierge-toggle-btn" onclick="toggleConciergeChat()" aria-expanded="false"
-      aria-controls="concierge-panel"
-      class="min-h-[46px] px-4 rounded-full bg-[#42131B] hover:bg-[#26090E] border border-[#B99A58]/60 text-[#E4D2A8] shadow-lg shadow-[#17110F]/60 flex items-center gap-2.5 font-sans text-xs font-medium transition-colors">
-      <span class="w-2 h-2 rounded-full bg-[#B99A58]"></span>
-      <span>Ask KRISTANJALI</span>
-    </button>
-
-    <!-- Chat Panel -->
-    <div id="concierge-panel" role="dialog" aria-label="KRISTANJALI Event Concierge"
-      class="hidden mt-2 w-[calc(100vw-2rem)] sm:w-[370px] rounded-xl bg-[#26090E] border border-[#B99A58]/50 shadow-2xl shadow-[#17110F]/85 overflow-hidden flex flex-col">
-      <div class="px-4 py-3 bg-[#42131B] border-b border-[#B99A58]/30 flex items-center justify-between">
-        <div>
-          <p class="font-display text-sm font-semibold text-[#E4D2A8]">KRISTANJALI Concierge</p>
-          <p class="font-sans text-[11px] text-[#F4EEE3]/75">OLPS Church, Dharwad • Instant Guide</p>
-        </div>
-        <button type="button" onclick="toggleConciergeChat(false)" aria-label="Close Concierge Chat"
-          class="min-w-[36px] min-h-[36px] rounded-lg bg-[#26090E]/80 border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center text-xs">
-          ✕
-        </button>
-      </div>
-
-      <!-- Messages Feed -->
-      <div id="concierge-messages" class="p-3.5 h-64 overflow-y-auto space-y-2.5 text-xs font-sans">
-        <div class="p-3 rounded-lg bg-[#42131B]/85 border border-[#B99A58]/25 text-[#F4EEE3] leading-relaxed">
-          Peace &amp; blessings! Ask me anything about <strong>KRISTANJALI 2K26</strong>—schedule &amp; 5:00 PM
-          soundcheck, registration, prizes, rules, venue directions, or contacts (Mr. Winston, Mr. Bosco &amp; Samson).
-        </div>
-      </div>
-
-      <!-- Quick Prompt Chips -->
-      <div class="px-3.5 pb-2.5 flex flex-wrap gap-1.5">
-        <button type="button" onclick="askConciergePreset('Date, timings & 5:00 PM soundcheck')"
-          class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
-          Timings &amp; 5 PM
-        </button>
-        <button type="button" onclick="askConciergePreset('How to register & entry fee?')"
-          class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
-          Registration &amp; Fee
-        </button>
-        <button type="button" onclick="askConciergePreset('Prizes & choir rules')"
-          class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
-          Prizes &amp; Rules
-        </button>
-        <button type="button" onclick="askConciergePreset('Contacts & Samson website inquiry')"
-          class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
-          Contacts
-        </button>
-      </div>
-
-      <!-- Input Bar -->
-      <form onsubmit="handleConciergeSubmit(event)"
-        class="p-2.5 bg-[#42131B]/60 border-t border-[#B99A58]/25 flex gap-2">
-        <input id="concierge-input" type="text" placeholder="Ask a question..."
-          class="flex-1 min-h-[40px] px-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-xs text-[#F4EEE3] placeholder-[#F4EEE3]/45 focus:outline-none focus:border-[#E4D2A8]" />
-        <button type="submit"
-          class="min-h-[40px] px-3.5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs transition-colors">
-          Send
-        </button>
-      </form>
+    <!-- Quick Prompt Chips -->
+    <div class="px-3.5 pb-2.5 flex flex-wrap gap-1.5">
+      <button type="button" onclick="askConciergePreset('Date, timings & 5:00 PM soundcheck')"
+        class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
+        Timings &amp; 5 PM
+      </button>
+      <button type="button" onclick="askConciergePreset('How to register & entry fee?')"
+        class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
+        Registration &amp; Fee
+      </button>
+      <button type="button" onclick="askConciergePreset('Prizes & choir rules')"
+        class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
+        Prizes &amp; Rules
+      </button>
+      <button type="button" onclick="askConciergePreset('Contacts & Samson website inquiry')"
+        class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
+        Contacts
+      </button>
     </div>
+
+    <!-- Input Bar -->
+    <form onsubmit="handleConciergeSubmit(event)" class="p-2.5 bg-[#42131B]/60 border-t border-[#B99A58]/25 flex gap-2">
+      <input id="concierge-input" type="text" placeholder="Ask a question..."
+        class="flex-1 min-h-[40px] px-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-xs text-[#F4EEE3] placeholder-[#F4EEE3]/45 focus:outline-none focus:border-[#E4D2A8]" />
+      <button type="submit"
+        class="min-h-[40px] px-3.5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs transition-colors">
+        Send
+      </button>
+    </form>
+  </div>
   </div>
 
   <!-- =========================================================================
