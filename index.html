@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>KRISTANJALI — An Evening of Carols | OLPS Church, Dharwad</title>
-  <meta name="description" content="KRISTANJALI — An Evening of Carols, presented by Our Lady of Perpetual Succour (OLPS) Church, Dharwad. Annual Christ-centered Christmas choir competition & parish celebration." />
+  <meta name="description"
+    content="KRISTANJALI — An Evening of Carols, presented by Our Lady of Perpetual Succour (OLPS) Church, Dharwad. Annual Christ-centered Christmas choir competition & parish celebration." />
 
   <!-- Editorial & Classical Concert Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -55,7 +59,8 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    html, body {
+    html,
+    body {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -87,6 +92,7 @@
       transform: translateY(16px);
       transition: opacity 0.65s ease-out, transform 0.65s ease-out;
     }
+
     .reveal-section.is-visible {
       opacity: 1;
       transform: translateY(0);
@@ -94,14 +100,36 @@
 
     /* 5-Bar Equalizer for Carol Box */
     @keyframes subtlePulse {
-      0%, 100% { height: 4px; }
-      50% { height: 13px; }
+
+      0%,
+      100% {
+        height: 4px;
+      }
+
+      50% {
+        height: 13px;
+      }
     }
-    .eq-active .eq-bar:nth-child(1) { animation: subtlePulse 0.72s ease-in-out infinite 0.04s; }
-    .eq-active .eq-bar:nth-child(2) { animation: subtlePulse 0.58s ease-in-out infinite 0.18s; }
-    .eq-active .eq-bar:nth-child(3) { animation: subtlePulse 0.76s ease-in-out infinite 0.10s; }
-    .eq-active .eq-bar:nth-child(4) { animation: subtlePulse 0.64s ease-in-out infinite 0.26s; }
-    .eq-active .eq-bar:nth-child(5) { animation: subtlePulse 0.70s ease-in-out infinite 0.14s; }
+
+    .eq-active .eq-bar:nth-child(1) {
+      animation: subtlePulse 0.72s ease-in-out infinite 0.04s;
+    }
+
+    .eq-active .eq-bar:nth-child(2) {
+      animation: subtlePulse 0.58s ease-in-out infinite 0.18s;
+    }
+
+    .eq-active .eq-bar:nth-child(3) {
+      animation: subtlePulse 0.76s ease-in-out infinite 0.10s;
+    }
+
+    .eq-active .eq-bar:nth-child(4) {
+      animation: subtlePulse 0.64s ease-in-out infinite 0.26s;
+    }
+
+    .eq-active .eq-bar:nth-child(5) {
+      animation: subtlePulse 0.70s ease-in-out infinite 0.14s;
+    }
 
     /* Desktop Podium 3D Tilt */
     .podium-tilt-card {
@@ -125,10 +153,13 @@
     }
 
     @keyframes sanctuarySpotlight {
-      0%, 100% {
+
+      0%,
+      100% {
         opacity: 0.72;
         transform: translate(-50%, -50%) scale(1);
       }
+
       50% {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1.07);
@@ -152,16 +183,28 @@
         opacity: 0;
         transform: translateY(14px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
 
-    .hero-enter-1 { animation: heroEntrance 0.75s cubic-bezier(0.22, 1, 0.36, 1) both 0.05s; }
-    .hero-enter-2 { animation: heroEntrance 0.85s cubic-bezier(0.22, 1, 0.36, 1) both 0.16s; }
-    .hero-enter-3 { animation: heroEntrance 0.85s cubic-bezier(0.22, 1, 0.36, 1) both 0.28s; }
-    .hero-enter-4 { animation: heroEntrance 0.85s cubic-bezier(0.22, 1, 0.36, 1) both 0.38s; }
+    .hero-enter-1 {
+      animation: heroEntrance 0.75s cubic-bezier(0.22, 1, 0.36, 1) both 0.05s;
+    }
+
+    .hero-enter-2 {
+      animation: heroEntrance 0.85s cubic-bezier(0.22, 1, 0.36, 1) both 0.16s;
+    }
+
+    .hero-enter-3 {
+      animation: heroEntrance 0.85s cubic-bezier(0.22, 1, 0.36, 1) both 0.28s;
+    }
+
+    .hero-enter-4 {
+      animation: heroEntrance 0.85s cubic-bezier(0.22, 1, 0.36, 1) both 0.38s;
+    }
 
     .hero-title-champagne {
       background: linear-gradient(180deg, #F4EEE3 0%, #E4D2A8 46%, #B99A58 100%);
@@ -172,10 +215,13 @@
     }
 
     @keyframes moteDrift {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translateY(0) translateX(0);
         opacity: 0.22;
       }
+
       50% {
         transform: translateY(-16px) translateX(6px);
         opacity: 0.65;
@@ -199,6 +245,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
+
       .reveal-section,
       .hero-enter-1,
       .hero-enter-2,
@@ -209,6 +256,7 @@
         animation: none !important;
         transition: none !important;
       }
+
       .eq-bar,
       .hero-spotlight-orb,
       .candle-mote {
@@ -218,8 +266,15 @@
 
     /* Print Styles for Official Invitation & Rulebook */
     @media print {
-      body * { visibility: hidden; }
-      #print-area-target, #print-area-target * { visibility: visible; }
+      body * {
+        visibility: hidden;
+      }
+
+      #print-area-target,
+      #print-area-target * {
+        visibility: visible;
+      }
+
       #print-area-target {
         position: fixed;
         inset: 0;
@@ -228,15 +283,25 @@
         padding: 32px !important;
       }
     }
+
     @keyframes teaserFloat {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-4px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-4px);
+      }
     }
+
     .animate-teaser-float {
       animation: teaserFloat 3.2s ease-in-out infinite;
     }
   </style>
 </head>
+
 <body class="antialiased selection:bg-[#B99A58] selection:text-[#17110F]">
 
   <!-- =========================================================================
@@ -248,10 +313,12 @@
       <div id="scroll-progress-bar" class="h-full w-0 bg-[#B99A58]"></div>
     </div>
 
-    <nav aria-label="Primary Navigation" class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+    <nav aria-label="Primary Navigation"
+      class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
       <!-- Brand Identity -->
       <a href="#hero-stage" class="flex items-center gap-3 min-h-[44px] group">
-        <span class="w-8 h-8 rounded-full border border-[#B99A58]/60 flex items-center justify-center font-display text-sm text-[#E4D2A8] group-hover:border-[#E4D2A8] transition-colors">
+        <span
+          class="w-8 h-8 rounded-full border border-[#B99A58]/60 flex items-center justify-center font-display text-sm text-[#E4D2A8] group-hover:border-[#E4D2A8] transition-colors">
           ✝
         </span>
         <div class="leading-tight">
@@ -278,17 +345,22 @@
       <!-- Right Controls: Edition Switcher + Carol Box + Register + Mobile Menu -->
       <div class="flex items-center gap-2">
         <!-- Annual / 2K26 Edition Switcher -->
-        <div role="group" aria-label="Festival Edition Switch" class="inline-flex items-center p-0.5 rounded-lg bg-[#42131B] border border-[#B99A58]/30">
-          <button type="button" id="btn-edition-2026" onclick="setFestivalEdition('2026')" data-chime class="min-h-[34px] px-2.5 sm:px-3 rounded-md text-[11px] font-sans font-semibold bg-[#B99A58] text-[#17110F] transition-colors">
-            2K26 (Season 3)
+        <div role="group" aria-label="Festival Edition Switch"
+          class="inline-flex items-center p-0.5 rounded-lg bg-[#42131B] border border-[#B99A58]/30">
+          <button type="button" id="btn-edition-2026" onclick="setFestivalEdition('2026')" data-chime
+            class="min-h-[34px] px-2.5 sm:px-3 rounded-md text-[11px] font-sans font-semibold bg-[#B99A58] text-[#17110F] transition-colors">
+            2K26
           </button>
-          <button type="button" id="btn-edition-annual" onclick="setFestivalEdition('annual')" data-chime class="min-h-[34px] px-2.5 sm:px-3 rounded-md text-[11px] font-sans font-medium text-[#E4D2A8] hover:text-[#F4EEE3] transition-colors">
+          <button type="button" id="btn-edition-annual" onclick="setFestivalEdition('annual')" data-chime
+            class="min-h-[34px] px-2.5 sm:px-3 rounded-md text-[11px] font-sans font-medium text-[#E4D2A8] hover:text-[#F4EEE3] transition-colors">
             Annual
           </button>
         </div>
 
         <!-- Web Audio API Carol Box (Silent Night Celesta + Sparkle) -->
-        <button type="button" id="carol-audio-btn" onclick="toggleCarolMusicBox()" aria-pressed="false" title="Play Silent Night Music Box" class="min-h-[40px] px-3 rounded-lg bg-[#42131B] hover:bg-[#42131B]/80 border border-[#B99A58]/35 text-[#E4D2A8] flex items-center gap-2 transition-colors">
+        <button type="button" id="carol-audio-btn" onclick="toggleCarolMusicBox()" aria-pressed="false"
+          title="Play Silent Night Music Box"
+          class="min-h-[40px] px-3 rounded-lg bg-[#42131B] hover:bg-[#42131B]/80 border border-[#B99A58]/35 text-[#E4D2A8] flex items-center gap-2 transition-colors">
           <span id="eq-visualizer" class="flex items-end gap-[2px] h-3.5 w-4 justify-center" aria-hidden="true">
             <span class="eq-bar w-[2px] h-1.5 bg-[#E4D2A8] rounded-full"></span>
             <span class="eq-bar w-[2px] h-2.5 bg-[#B99A58] rounded-full"></span>
@@ -300,14 +372,16 @@
         </button>
 
         <!-- Desktop Primary Register CTA -->
-        <button type="button" onclick="openRegistrationDrawer()" data-chime class="hidden md:inline-flex min-h-[40px] px-4 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs tracking-wide transition-colors items-center">
+        <button type="button" onclick="openRegistrationDrawer()" data-chime
+          class="hidden md:inline-flex min-h-[40px] px-4 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs tracking-wide transition-colors items-center">
           Register Choir
         </button>
 
         <!-- Mobile Menu Trigger -->
-        <button type="button" onclick="toggleMobileMenu(true)" aria-label="Open Navigation Menu" class="lg:hidden min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] flex items-center justify-center">
+        <button type="button" onclick="toggleMobileMenu(true)" aria-label="Open Navigation Menu"
+          class="lg:hidden min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] flex items-center justify-center">
           <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
           </svg>
         </button>
       </div>
@@ -317,36 +391,54 @@
   <!-- =========================================================================
        MOBILE SLIDE-IN NAVIGATION DRAWER
   ========================================================================== -->
-  <div id="mobile-nav-drawer" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+  <div id="mobile-nav-drawer" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true"
+    aria-label="Mobile Navigation">
     <div onclick="toggleMobileMenu(false)" class="absolute inset-0 bg-[#17110F]/80 backdrop-blur-xs"></div>
-    <div class="relative ml-auto w-[84%] max-w-xs h-full bg-[#26090E] border-l border-[#B99A58]/30 p-6 flex flex-col justify-between overflow-y-auto">
+    <div
+      class="relative ml-auto w-[84%] max-w-xs h-full bg-[#26090E] border-l border-[#B99A58]/30 p-6 flex flex-col justify-between overflow-y-auto">
       <div>
         <div class="flex items-center justify-between pb-4 border-b border-[#B99A58]/25">
           <div>
             <span class="font-display text-base font-semibold tracking-wider text-[#E4D2A8]">KRISTANJALI</span>
             <p class="font-sans text-[11px] text-[#F4EEE3]/70">OLPS Church, Dharwad</p>
           </div>
-          <button type="button" onclick="toggleMobileMenu(false)" aria-label="Close Menu" class="min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center">
+          <button type="button" onclick="toggleMobileMenu(false)" aria-label="Close Menu"
+            class="min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center">
             ✕
           </button>
         </div>
 
         <nav class="mt-5 flex flex-col gap-1.5 font-sans text-sm">
-          <a href="#sanctuary-intro" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">About & Advent Blessing</a>
-          <a href="#schedule" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Evening Schedule (5:00 PM)</a>
-          <a href="#prizes" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Championship Prizes</a>
-          <a href="#guidelines" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Guidelines & Rulebook</a>
-          <a href="#gallery" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Photo Gallery</a>
-          <a href="#patrons" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Sponsors & Namma Kitchen</a>
-          <a href="#contact" onclick="toggleMobileMenu(false)" class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Organizing Committee</a>
+          <a href="#sanctuary-intro" onclick="toggleMobileMenu(false)"
+            class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">About & Advent
+            Blessing</a>
+          <a href="#schedule" onclick="toggleMobileMenu(false)"
+            class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Evening Schedule
+            (5:00 PM)</a>
+          <a href="#prizes" onclick="toggleMobileMenu(false)"
+            class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Championship
+            Prizes</a>
+          <a href="#guidelines" onclick="toggleMobileMenu(false)"
+            class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Guidelines &
+            Rulebook</a>
+          <a href="#gallery" onclick="toggleMobileMenu(false)"
+            class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Photo Gallery</a>
+          <a href="#patrons" onclick="toggleMobileMenu(false)"
+            class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Sponsors & Namma
+            Kitchen</a>
+          <a href="#contact" onclick="toggleMobileMenu(false)"
+            class="min-h-[44px] px-3.5 rounded-lg hover:bg-[#42131B] text-[#F4EEE3] flex items-center">Organizing
+            Committee</a>
         </nav>
       </div>
 
       <div class="pt-5 border-t border-[#B99A58]/25 space-y-2.5">
-        <button type="button" onclick="toggleMobileMenu(false); openRegistrationDrawer();" class="w-full min-h-[46px] rounded-lg bg-[#B99A58] text-[#17110F] font-sans font-semibold text-xs tracking-wide">
+        <button type="button" onclick="toggleMobileMenu(false); openRegistrationDrawer();"
+          class="w-full min-h-[46px] rounded-lg bg-[#B99A58] text-[#17110F] font-sans font-semibold text-xs tracking-wide">
           Register Your Choir
         </button>
-        <button type="button" onclick="toggleMobileMenu(false); openVenueModal();" class="w-full min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs">
+        <button type="button" onclick="toggleMobileMenu(false); openVenueModal();"
+          class="w-full min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs">
           Venue & Directions
         </button>
       </div>
@@ -361,55 +453,61 @@
     <!-- =====================================================================
          SECTION 1: ROYAL CHRISTMAS CONCERT HERO (CINEMATIC LAYERED SANCTUARY)
     ====================================================================== -->
-    <section id="hero-stage" class="hero-cinematic-stage relative overflow-hidden flex items-center px-3 sm:px-6 lg:px-10 py-6 sm:py-10 lg:py-12">
+    <section id="hero-stage"
+      class="hero-cinematic-stage relative overflow-hidden flex items-center px-3 sm:px-6 lg:px-10 py-6 sm:py-10 lg:py-12">
 
       <!-- Layer 1: Architectural Gothic Sanctuary Arches, Rose Tracery & Organ Silhouette SVG -->
-      <svg class="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-35" viewBox="0 0 1440 860" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+      <svg class="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-35" viewBox="0 0 1440 860"
+        preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
         <defs>
           <radialGradient id="roseGlow" cx="50%" cy="32%" r="36%">
-            <stop offset="0%" stop-color="#E4D2A8" stop-opacity="0.34"/>
-            <stop offset="55%" stop-color="#B99A58" stop-opacity="0.1"/>
-            <stop offset="100%" stop-color="#26090E" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#E4D2A8" stop-opacity="0.34" />
+            <stop offset="55%" stop-color="#B99A58" stop-opacity="0.1" />
+            <stop offset="100%" stop-color="#26090E" stop-opacity="0" />
           </radialGradient>
           <linearGradient id="archStroke" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#E4D2A8" stop-opacity="0.48"/>
-            <stop offset="65%" stop-color="#B99A58" stop-opacity="0.18"/>
-            <stop offset="100%" stop-color="#B99A58" stop-opacity="0.03"/>
+            <stop offset="0%" stop-color="#E4D2A8" stop-opacity="0.48" />
+            <stop offset="65%" stop-color="#B99A58" stop-opacity="0.18" />
+            <stop offset="100%" stop-color="#B99A58" stop-opacity="0.03" />
           </linearGradient>
         </defs>
 
         <!-- Warm Stained-Glass Rose Radiance -->
-        <circle cx="720" cy="270" r="290" fill="url(#roseGlow)"/>
+        <circle cx="720" cy="270" r="290" fill="url(#roseGlow)" />
 
         <!-- Stained-Glass Rose Window Tracery -->
         <g stroke="url(#archStroke)" stroke-width="1">
-          <circle cx="720" cy="255" r="145"/>
-          <circle cx="720" cy="255" r="112"/>
-          <circle cx="720" cy="255" r="54"/>
-          <path d="M720 110 V400 M575 255 H865 M617 152 L823 358 M823 152 L617 358"/>
+          <circle cx="720" cy="255" r="145" />
+          <circle cx="720" cy="255" r="112" />
+          <circle cx="720" cy="255" r="54" />
+          <path d="M720 110 V400 M575 255 H865 M617 152 L823 358 M823 152 L617 358" />
         </g>
 
         <!-- Grand Central Cathedral Sanctuary Arch -->
-        <path d="M350 860 V360 C350 175 510 68 720 68 C930 68 1090 175 1090 360 V860" stroke="url(#archStroke)" stroke-width="1.35"/>
-        <path d="M386 860 V372 C386 205 530 104 720 104 C910 104 1054 205 1054 372 V860" stroke="url(#archStroke)" stroke-width="0.9"/>
+        <path d="M350 860 V360 C350 175 510 68 720 68 C930 68 1090 175 1090 360 V860" stroke="url(#archStroke)"
+          stroke-width="1.35" />
+        <path d="M386 860 V372 C386 205 530 104 720 104 C910 104 1054 205 1054 372 V860" stroke="url(#archStroke)"
+          stroke-width="0.9" />
 
         <!-- Flanking Side Arcade Arches -->
-        <path d="M70 860 V420 C70 285 165 205 290 205 C325 205 352 212 375 224" stroke="url(#archStroke)" stroke-width="1"/>
-        <path d="M1370 860 V420 C1370 285 1275 205 1150 205 C1115 205 1088 212 1065 224" stroke="url(#archStroke)" stroke-width="1"/>
+        <path d="M70 860 V420 C70 285 165 205 290 205 C325 205 352 212 375 224" stroke="url(#archStroke)"
+          stroke-width="1" />
+        <path d="M1370 860 V420 C1370 285 1275 205 1150 205 C1115 205 1088 212 1065 224" stroke="url(#archStroke)"
+          stroke-width="1" />
 
         <!-- Subtle Pipe-Organ / Choral Gallery Vertical Lines -->
         <g stroke="#B99A58" stroke-opacity="0.13" stroke-width="1">
-          <line x1="470" y1="220" x2="470" y2="560"/>
-          <line x1="492" y1="195" x2="492" y2="560"/>
-          <line x1="514" y1="178" x2="514" y2="560"/>
-          <line x1="926" y1="178" x2="926" y2="560"/>
-          <line x1="948" y1="195" x2="948" y2="560"/>
-          <line x1="970" y1="220" x2="970" y2="560"/>
+          <line x1="470" y1="220" x2="470" y2="560" />
+          <line x1="492" y1="195" x2="492" y2="560" />
+          <line x1="514" y1="178" x2="514" y2="560" />
+          <line x1="926" y1="178" x2="926" y2="560" />
+          <line x1="948" y1="195" x2="948" y2="560" />
+          <line x1="970" y1="220" x2="970" y2="560" />
         </g>
 
         <!-- Subtle Sanctuary Steps & Altar Horizon -->
-        <line x1="220" y1="735" x2="1220" y2="735" stroke="#B99A58" stroke-opacity="0.2" stroke-width="1"/>
-        <line x1="160" y1="762" x2="1280" y2="762" stroke="#B99A58" stroke-opacity="0.14" stroke-width="1"/>
+        <line x1="220" y1="735" x2="1220" y2="735" stroke="#B99A58" stroke-opacity="0.2" stroke-width="1" />
+        <line x1="160" y1="762" x2="1280" y2="762" stroke="#B99A58" stroke-opacity="0.14" stroke-width="1" />
       </svg>
 
       <!-- Layer 2: Breathing Warm Golden Stage Spotlight -->
@@ -428,13 +526,22 @@
       </div>
 
       <!-- Layer 4: Outer Architectural Gold Hairline Proscenium Frame -->
-      <div class="relative w-full max-w-6xl mx-auto rounded-2xl border border-[#B99A58]/30 bg-[#26090E]/45 backdrop-blur-[2px] px-4 sm:px-10 lg:px-14 py-8 sm:py-12 lg:py-14">
+      <div
+        class="relative w-full max-w-6xl mx-auto rounded-2xl border border-[#B99A58]/30 bg-[#26090E]/45 backdrop-blur-[2px] px-4 sm:px-10 lg:px-14 py-8 sm:py-12 lg:py-14">
 
         <!-- Delicate Corner Filigree Accents -->
-        <span class="hidden sm:block absolute top-3 left-3 w-4 h-4 border-t border-l border-[#E4D2A8]/60 pointer-events-none" aria-hidden="true"></span>
-        <span class="hidden sm:block absolute top-3 right-3 w-4 h-4 border-t border-r border-[#E4D2A8]/60 pointer-events-none" aria-hidden="true"></span>
-        <span class="hidden sm:block absolute bottom-3 left-3 w-4 h-4 border-b border-l border-[#E4D2A8]/60 pointer-events-none" aria-hidden="true"></span>
-        <span class="hidden sm:block absolute bottom-3 right-3 w-4 h-4 border-b border-r border-[#E4D2A8]/60 pointer-events-none" aria-hidden="true"></span>
+        <span
+          class="hidden sm:block absolute top-3 left-3 w-4 h-4 border-t border-l border-[#E4D2A8]/60 pointer-events-none"
+          aria-hidden="true"></span>
+        <span
+          class="hidden sm:block absolute top-3 right-3 w-4 h-4 border-t border-r border-[#E4D2A8]/60 pointer-events-none"
+          aria-hidden="true"></span>
+        <span
+          class="hidden sm:block absolute bottom-3 left-3 w-4 h-4 border-b border-l border-[#E4D2A8]/60 pointer-events-none"
+          aria-hidden="true"></span>
+        <span
+          class="hidden sm:block absolute bottom-3 right-3 w-4 h-4 border-b border-r border-[#E4D2A8]/60 pointer-events-none"
+          aria-hidden="true"></span>
 
         <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
 
@@ -443,8 +550,9 @@
             <div class="flex items-center gap-3 text-[#E4D2A8] mb-3.5" aria-hidden="true">
               <span class="w-10 sm:w-16 h-px bg-gradient-to-r from-transparent to-[#B99A58]/70"></span>
               <svg class="w-8 h-9 text-[#E4D2A8]" viewBox="0 0 48 54" fill="none">
-                <path d="M24 2 L25.8 10.2 L34 12 L25.8 13.8 L24 22 L22.2 13.8 L14 12 L22.2 10.2 Z" stroke="currentColor" stroke-width="1.2"/>
-                <path d="M24 26 V50 M15 35 H33" stroke="#B99A58" stroke-width="1.35" stroke-linecap="round"/>
+                <path d="M24 2 L25.8 10.2 L34 12 L25.8 13.8 L24 22 L22.2 13.8 L14 12 L22.2 10.2 Z" stroke="currentColor"
+                  stroke-width="1.2" />
+                <path d="M24 26 V50 M15 35 H33" stroke="#B99A58" stroke-width="1.35" stroke-linecap="round" />
               </svg>
               <span class="w-10 sm:w-16 h-px bg-gradient-to-l from-transparent to-[#B99A58]/70"></span>
             </div>
@@ -453,27 +561,31 @@
               Our Lady of Perpetual Succour (OLPS) Church &nbsp;•&nbsp; Dharwad
             </p>
 
-            <div class="mt-2.5 inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#42131B]/80 border border-[#B99A58]/35">
+            <div
+              class="mt-2.5 inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#42131B]/80 border border-[#B99A58]/35">
               <span class="w-1.5 h-1.5 rounded-full bg-[#B99A58]"></span>
               <p id="hero-edition-badge" class="font-editorial italic text-base sm:text-lg text-[#F4EEE3] leading-none">
-                Here is Kristanjali Season 3 • 2K26 Edition
+                Here is Kristanjali • 2K26 Edition
               </p>
             </div>
           </div>
 
           <!-- Dominant Concert Headline & Editorial Subtitle -->
           <div class="hero-enter-2 mt-5 sm:mt-6 w-full">
-            <span class="block text-xs sm:text-sm font-sans font-semibold tracking-[0.22em] text-[#B99A58] uppercase mb-2">
-              Here is Kristanjali Season 3
+            <span
+              class="block text-xs sm:text-sm font-sans font-semibold tracking-[0.22em] text-[#B99A58] uppercase mb-2">
+              Here is Kristanjali
             </span>
-            <h1 class="hero-title-champagne font-display font-semibold text-[clamp(2.35rem,7.8vw,5.85rem)] tracking-[0.11em] sm:tracking-[0.14em] leading-[1.04] uppercase">
+            <h1
+              class="hero-title-champagne font-display font-semibold text-[clamp(2.35rem,7.8vw,5.85rem)] tracking-[0.11em] sm:tracking-[0.14em] leading-[1.04] uppercase">
               KRISTANJALI 2K26
             </h1>
 
             <div class="mt-3 sm:mt-4 flex items-center justify-center gap-3 sm:gap-5">
               <span class="w-8 sm:w-16 h-px bg-[#B99A58]/55"></span>
-              <p class="font-editorial italic text-[clamp(1.35rem,3vw,2.25rem)] text-[#F4EEE3] font-normal tracking-wide">
-                An Evening of Carols &nbsp;•&nbsp; Season 3
+              <p
+                class="font-editorial italic text-[clamp(1.35rem,3vw,2.25rem)] text-[#F4EEE3] font-normal tracking-wide">
+                An Evening of Carols
               </p>
               <span class="w-8 sm:w-16 h-px bg-[#B99A58]/55"></span>
             </div>
@@ -484,8 +596,10 @@
           </div>
 
           <!-- Structured 3-Column Editorial Event Information Panel -->
-          <div id="hero-date-pill" class="hero-enter-3 mt-6 sm:mt-8 w-full max-w-4xl hero-info-panel rounded-xl overflow-hidden">
-            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#B99A58]/25 text-left md:text-center">
+          <div id="hero-date-pill"
+            class="hero-enter-3 mt-6 sm:mt-8 w-full max-w-4xl hero-info-panel rounded-xl overflow-hidden">
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#B99A58]/25 text-left md:text-center">
 
               <!-- Column 1: Date & Concert Time -->
               <div class="p-4 sm:p-5 flex flex-col justify-center">
@@ -505,8 +619,10 @@
                 <span class="font-sans text-[10px] font-semibold tracking-[0.16em] text-[#B99A58] uppercase">
                   Sanctuary Venue
                 </span>
-                <button type="button" onclick="openVenueModal()" class="mt-1 text-left md:text-center group focus:outline-none">
-                  <span class="block font-display text-sm sm:text-base font-semibold text-[#E4D2A8] group-hover:underline decoration-[#B99A58] underline-offset-4">
+                <button type="button" onclick="openVenueModal()"
+                  class="mt-1 text-left md:text-center group focus:outline-none">
+                  <span
+                    class="block font-display text-sm sm:text-base font-semibold text-[#E4D2A8] group-hover:underline decoration-[#B99A58] underline-offset-4">
                     OLPS Church, Dharwad
                   </span>
                   <span class="block mt-0.5 font-sans text-xs text-[#F4EEE3]/85">
@@ -531,18 +647,22 @@
             </div>
 
             <!-- Live Countdown Footer Strip Inside Panel -->
-            <div class="px-4 py-2 bg-[#26090E]/90 border-t border-[#B99A58]/25 flex flex-wrap items-center justify-center gap-2 text-xs font-sans text-[#E4D2A8]">
+            <div
+              class="px-4 py-2 bg-[#26090E]/90 border-t border-[#B99A58]/25 flex flex-wrap items-center justify-center gap-2 text-xs font-sans text-[#E4D2A8]">
               <span class="w-1.5 h-1.5 rounded-full bg-[#B99A58]"></span>
               <span id="hero-countdown-text" class="tracking-wide">Loading 2K26 Countdown...</span>
             </div>
           </div>
 
           <!-- Premium Primary & Secondary Event CTAs -->
-          <div class="hero-enter-4 mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto">
-            <button type="button" onclick="openRegistrationDrawer()" data-chime class="w-full sm:w-auto min-h-[50px] px-8 py-3.5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] hover:-translate-y-0.5 text-[#17110F] font-sans font-semibold text-sm tracking-wide transition-all duration-200 shadow-lg shadow-[#17110F]/40">
+          <div
+            class="hero-enter-4 mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto">
+            <button type="button" onclick="openRegistrationDrawer()" data-chime
+              class="w-full sm:w-auto min-h-[50px] px-8 py-3.5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] hover:-translate-y-0.5 text-[#17110F] font-sans font-semibold text-sm tracking-wide transition-all duration-200 shadow-lg shadow-[#17110F]/40">
               Register Your Choir
             </button>
-            <button type="button" onclick="shareInviteWithChoirWhatsApp()" data-chime class="w-full sm:w-auto min-h-[50px] px-7 py-3.5 rounded-lg bg-[#26090E]/70 hover:bg-[#42131B] hover:-translate-y-0.5 border border-[#E4D2A8]/45 text-[#E4D2A8] font-sans font-medium text-sm tracking-wide transition-all duration-200">
+            <button type="button" onclick="shareInviteWithChoirWhatsApp()" data-chime
+              class="w-full sm:w-auto min-h-[50px] px-7 py-3.5 rounded-lg bg-[#26090E]/70 hover:bg-[#42131B] hover:-translate-y-0.5 border border-[#E4D2A8]/45 text-[#E4D2A8] font-sans font-medium text-sm tracking-wide transition-all duration-200">
               Share Invite on WhatsApp
             </button>
           </div>
@@ -555,7 +675,8 @@
          STATIC ANNOUNCEMENT STRIP
     ====================================================================== -->
     <div aria-label="Festival Highlights" class="bg-[#42131B] border-y border-[#B99A58]/30 px-4 py-3.5">
-      <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1.5 text-center font-sans text-xs sm:text-[13px] text-[#E4D2A8]">
+      <div
+        class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1.5 text-center font-sans text-xs sm:text-[13px] text-[#E4D2A8]">
         <span>On-Site Reporting &amp; Soundcheck from 05:00 PM</span>
         <span class="text-[#B99A58]/60 hidden sm:inline">•</span>
         <span>Celebrating Annually Since 2024</span>
@@ -568,13 +689,14 @@
          SECTION 2: CHRIST-CENTERED ADVENT SANCTUARY & EVENT INTRODUCTION
          (Warm Ivory Band #F4EEE3 with Soft Charcoal #17110F Typography)
     ====================================================================== -->
-    <section id="sanctuary-intro" class="bg-[#F4EEE3] text-[#17110F] py-16 sm:py-24 px-4 sm:px-8 border-b border-[#26090E]/15">
+    <section id="sanctuary-intro"
+      class="bg-[#F4EEE3] text-[#17110F] py-16 sm:py-24 px-4 sm:px-8 border-b border-[#26090E]/15">
       <div class="max-w-5xl mx-auto reveal-section">
 
         <!-- Scripture & Konkani/Kannada Sacred Greeting -->
         <div class="max-w-3xl mx-auto text-center">
           <p class="font-sans text-xs font-semibold tracking-[0.16em] text-[#42131B] uppercase">
-            Here is Kristanjali Season 3 (2K26) &nbsp;•&nbsp; Gloria in Excelsis Deo &nbsp;•&nbsp; ದೇವರಿಗೆ ಮಹಿಮೆ
+            Here is Kristanjali (2K26) &nbsp;•&nbsp; Gloria in Excelsis Deo &nbsp;•&nbsp; ದೇವರಿಗೆ ಮಹಿಮೆ
           </p>
           <blockquote class="mt-4">
             <p class="font-editorial italic text-2xl sm:text-4xl text-[#26090E] leading-snug">
@@ -588,15 +710,20 @@
           <div class="w-16 h-px bg-[#B99A58] mx-auto my-8"></div>
 
           <h2 class="font-display text-2xl sm:text-4xl font-semibold text-[#26090E]">
-            Here is Kristanjali Season 3 — 2K26
+            Here is Kristanjali — 2K26
           </h2>
           <p class="mt-4 font-editorial text-xl sm:text-2xl text-[#17110F]/85 leading-relaxed">
-            Presented by <strong>Our Lady of Perpetual Succour (OLPS) Church, Dharwad</strong> (<a href="https://www.instagram.com/olps_youth_dharwad/" target="_blank" rel="noopener" class="underline decoration-[#B99A58] underline-offset-4 hover:text-[#42131B]">@olps_youth_dharwad</a>), <strong>KRISTANJALI Season 3 (2K26)</strong> brings parish, youth, and institutional choirs together in reverence and musical harmony to proclaim the birth of Jesus Christ.
+            Presented by <strong>Our Lady of Perpetual Succour (OLPS) Church, Dharwad</strong> (<a
+              href="https://www.instagram.com/olps_youth_dharwad/" target="_blank" rel="noopener"
+              class="underline decoration-[#B99A58] underline-offset-4 hover:text-[#42131B]">@olps_youth_dharwad</a>),
+            <strong>KRISTANJALI (2K26)</strong> brings parish, youth, and institutional choirs together in reverence and
+            musical harmony to proclaim the birth of Jesus Christ.
           </p>
         </div>
 
         <!-- Clean Editorial Statistics -->
-        <div id="impact-counters-grid" class="mt-14 pt-10 border-t border-[#26090E]/15 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+        <div id="impact-counters-grid"
+          class="mt-14 pt-10 border-t border-[#26090E]/15 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           <div>
             <p class="font-sans text-xs font-semibold tracking-[0.14em] text-[#42131B] uppercase">
               Celebrating Annually Since
@@ -680,10 +807,12 @@
             </div>
 
             <div class="mt-7 pt-5 border-t border-[#B99A58]/25 flex flex-col sm:flex-row gap-2.5">
-              <button type="button" onclick="openVenueModal()" data-chime class="flex-1 min-h-[44px] px-4 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs tracking-wide transition-colors">
+              <button type="button" onclick="openVenueModal()" data-chime
+                class="flex-1 min-h-[44px] px-4 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs tracking-wide transition-colors">
                 Venue &amp; Google Maps
               </button>
-              <button type="button" onclick="downloadEventICS()" data-chime class="flex-1 min-h-[44px] px-4 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/40 text-[#E4D2A8] font-sans font-medium text-xs tracking-wide transition-colors">
+              <button type="button" onclick="downloadEventICS()" data-chime
+                class="flex-1 min-h-[44px] px-4 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/40 text-[#E4D2A8] font-sans font-medium text-xs tracking-wide transition-colors">
                 Download Calendar (.ics)
               </button>
             </div>
@@ -724,7 +853,8 @@
         <!-- Three Architectural Prize Presentations -->
         <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
           <!-- Second Prize -->
-          <div class="podium-tilt-card order-2 md:order-1 surface-ivory rounded-xl p-7 text-center flex flex-col justify-between">
+          <div
+            class="podium-tilt-card order-2 md:order-1 surface-ivory rounded-xl p-7 text-center flex flex-col justify-between">
             <div>
               <span class="font-sans text-xs font-semibold tracking-[0.14em] text-[#42131B] uppercase">
                 Second Prize
@@ -739,9 +869,11 @@
           </div>
 
           <!-- First Prize (Distinguished by Deep Burgundy Surface) -->
-          <div class="podium-tilt-card order-1 md:order-2 bg-[#26090E] text-[#F4EEE3] border border-[#B99A58] rounded-xl p-8 text-center flex flex-col justify-between">
+          <div
+            class="podium-tilt-card order-1 md:order-2 bg-[#26090E] text-[#F4EEE3] border border-[#B99A58] rounded-xl p-8 text-center flex flex-col justify-between">
             <div>
-              <span class="inline-block px-3 py-0.5 rounded-full border border-[#B99A58]/50 font-sans text-[11px] font-medium tracking-[0.14em] text-[#E4D2A8] uppercase">
+              <span
+                class="inline-block px-3 py-0.5 rounded-full border border-[#B99A58]/50 font-sans text-[11px] font-medium tracking-[0.14em] text-[#E4D2A8] uppercase">
                 First Prize
               </span>
               <p class="mt-4 font-display text-4xl sm:text-5xl font-semibold text-[#E4D2A8]">
@@ -772,7 +904,8 @@
         <!-- Consolation Prize Note -->
         <div class="mt-8 rounded-xl bg-[#FAF6EE] border border-[#B99A58]/50 px-6 py-4 text-center">
           <p class="font-sans text-xs sm:text-sm font-medium text-[#26090E]">
-            Plus: <span class="font-semibold">Consolation Prize</span> &amp; blessing memento presented to all participating teams.
+            Plus: <span class="font-semibold">Consolation Prize</span> &amp; blessing memento presented to all
+            participating teams.
           </p>
         </div>
       </div>
@@ -795,21 +928,28 @@
 
           <!-- Printable Invitation & Rulebook Modal Buttons -->
           <div class="flex flex-wrap gap-2.5">
-            <button type="button" onclick="openDocumentModal('invitation')" data-chime class="min-h-[44px] px-4 rounded-lg bg-[#42131B] hover:bg-[#42131B]/80 border border-[#B99A58]/35 text-xs font-sans font-medium text-[#E4D2A8] transition-colors">
+            <button type="button" onclick="openDocumentModal('invitation')" data-chime
+              class="min-h-[44px] px-4 rounded-lg bg-[#42131B] hover:bg-[#42131B]/80 border border-[#B99A58]/35 text-xs font-sans font-medium text-[#E4D2A8] transition-colors">
               Printable Invitation
             </button>
-            <button type="button" onclick="openDocumentModal('rulebook')" data-chime class="min-h-[44px] px-4 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] text-xs font-sans font-semibold transition-colors">
+            <button type="button" onclick="openDocumentModal('rulebook')" data-chime
+              class="min-h-[44px] px-4 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] text-xs font-sans font-semibold transition-colors">
               Official Rulebook
             </button>
           </div>
         </div>
 
         <!-- Clean Tab Switcher -->
-        <div role="tablist" aria-label="Guidelines Tabs" class="mt-8 inline-flex flex-col sm:flex-row w-full sm:w-auto p-1 rounded-xl bg-[#42131B] border border-[#B99A58]/30 gap-1">
-          <button type="button" role="tab" id="tab-btn-rules" aria-selected="true" onclick="switchGuidelineTab('rules')" data-chime class="min-h-[44px] px-5 py-2.5 rounded-lg font-sans text-xs sm:text-sm font-semibold bg-[#B99A58] text-[#17110F] transition-colors">
+        <div role="tablist" aria-label="Guidelines Tabs"
+          class="mt-8 inline-flex flex-col sm:flex-row w-full sm:w-auto p-1 rounded-xl bg-[#42131B] border border-[#B99A58]/30 gap-1">
+          <button type="button" role="tab" id="tab-btn-rules" aria-selected="true" onclick="switchGuidelineTab('rules')"
+            data-chime
+            class="min-h-[44px] px-5 py-2.5 rounded-lg font-sans text-xs sm:text-sm font-semibold bg-[#B99A58] text-[#17110F] transition-colors">
             Choir Competition Rules
           </button>
-          <button type="button" role="tab" id="tab-btn-reporting" aria-selected="false" onclick="switchGuidelineTab('reporting')" data-chime class="min-h-[44px] px-5 py-2.5 rounded-lg font-sans text-xs sm:text-sm font-medium text-[#E4D2A8] hover:text-[#F4EEE3] transition-colors">
+          <button type="button" role="tab" id="tab-btn-reporting" aria-selected="false"
+            onclick="switchGuidelineTab('reporting')" data-chime
+            class="min-h-[44px] px-5 py-2.5 rounded-lg font-sans text-xs sm:text-sm font-medium text-[#E4D2A8] hover:text-[#F4EEE3] transition-colors">
             Event-Day Reporting Instructions (5:00 PM)
           </button>
         </div>
@@ -821,10 +961,12 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">01</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Group Composition</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                Each group must have a minimum of <strong class="text-[#E4D2A8]">8 participants</strong> and a maximum of <strong class="text-[#E4D2A8]">20</strong>. Mixed age groups are allowed.
+                Each group must have a minimum of <strong class="text-[#E4D2A8]">8 participants</strong> and a maximum
+                of <strong class="text-[#E4D2A8]">20</strong>. Mixed age groups are allowed.
               </p>
             </div>
-            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">8–20 Singers • Mixed Age Groups</div>
+            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">8–20 Singers • Mixed Age
+              Groups</div>
           </div>
 
           <div class="surface-wine rounded-xl p-5 sm:p-6 flex flex-col justify-between">
@@ -832,10 +974,13 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">02</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Registration &amp; Confirmation</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                Every team must register online or inform the organisers in advance. Teams must confirm participation between <strong class="text-[#E4D2A8]">5:00 PM and 6:00 PM</strong> on event day. Outstanding entry fee may be paid in cash. Online teams get preference.
+                Every team must register online or inform the organisers in advance. Teams must confirm participation
+                between <strong class="text-[#E4D2A8]">5:00 PM and 6:00 PM</strong> on event day. Outstanding entry fee
+                may be paid in cash. Online teams get preference.
               </p>
             </div>
-            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Closes 14 Dec • 5–6 PM Slot</div>
+            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Closes 14 Dec • 5–6 PM Slot
+            </div>
           </div>
 
           <div class="surface-wine rounded-xl p-5 sm:p-6 flex flex-col justify-between">
@@ -843,10 +988,12 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">03</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Stage Time Limit</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                Each group receives <strong class="text-[#E4D2A8]">9 minutes</strong> for their performance: <strong class="text-[#E4D2A8]">1 min setup + 7 mins singing + 1 min exit</strong>.
+                Each group receives <strong class="text-[#E4D2A8]">9 minutes</strong> for their performance: <strong
+                  class="text-[#E4D2A8]">1 min setup + 7 mins singing + 1 min exit</strong>.
               </p>
             </div>
-            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Strict 9 Min Duration (1+7+1)</div>
+            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Strict 9 Min Duration (1+7+1)
+            </div>
           </div>
 
           <div class="surface-wine rounded-xl p-5 sm:p-6 flex flex-col justify-between">
@@ -854,10 +1001,12 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">04</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Song Selection</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                Christmas carols in <strong class="text-[#E4D2A8]">any language</strong> are allowed. Songs must be reverent and appropriate for the festive Christian occasion.
+                Christmas carols in <strong class="text-[#E4D2A8]">any language</strong> are allowed. Songs must be
+                reverent and appropriate for the festive Christian occasion.
               </p>
             </div>
-            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Multilingual • Christ-Centered</div>
+            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Multilingual •
+              Christ-Centered</div>
           </div>
 
           <div class="surface-wine rounded-xl p-5 sm:p-6 flex flex-col justify-between">
@@ -865,10 +1014,13 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">05</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Backing &amp; Accompaniment</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                <strong class="text-[#E4D2A8]">Live music and instruments preferred</strong> (keyboard, guitar, cajon, etc.). Instrumental backing tracks are allowed if submitted/checked earlier. <strong class="text-[#E4D2A8]">No pre-recorded vocals</strong> allowed.
+                <strong class="text-[#E4D2A8]">Live music and instruments preferred</strong> (keyboard, guitar, cajon,
+                etc.). Instrumental backing tracks are allowed if submitted/checked earlier. <strong
+                  class="text-[#E4D2A8]">No pre-recorded vocals</strong> allowed.
               </p>
             </div>
-            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Live or Instrumental Backing</div>
+            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Live or Instrumental Backing
+            </div>
           </div>
 
           <div class="surface-wine rounded-xl p-5 sm:p-6 flex flex-col justify-between">
@@ -876,10 +1028,12 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">06</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Performance Guidelines</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                Groups must maintain sanctuary decorum suitable for a church event. Choreography or movement is permitted but <strong class="text-[#E4D2A8]">should not distract from singing</strong>.
+                Groups must maintain sanctuary decorum suitable for a church event. Choreography or movement is
+                permitted but <strong class="text-[#E4D2A8]">should not distract from singing</strong>.
               </p>
             </div>
-            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Sanctuary Decorum &amp; Reverence</div>
+            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Sanctuary Decorum &amp;
+              Reverence</div>
           </div>
 
           <div class="surface-wine rounded-xl p-5 sm:p-6 flex flex-col justify-between">
@@ -887,10 +1041,12 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">07</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Judging Criteria</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                Judging will be based <strong class="text-[#E4D2A8]">only on singing and music</strong>. No marks will be awarded for choreography, stage presentation, or other non-musical elements.
+                Judging will be based <strong class="text-[#E4D2A8]">only on singing and music</strong>. No marks will
+                be awarded for choreography, stage presentation, or other non-musical elements.
               </p>
             </div>
-            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">100% Singing &amp; Musicality</div>
+            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">100% Singing &amp; Musicality
+            </div>
           </div>
 
           <div class="surface-wine rounded-xl p-5 sm:p-6 flex flex-col justify-between">
@@ -898,7 +1054,8 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">08</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Reporting &amp; Soundcheck</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                All teams must report between <strong class="text-[#E4D2A8]">5:00 PM and 6:00 PM</strong> to confirm participation and complete any pending entry-fee payment.
+                All teams must report between <strong class="text-[#E4D2A8]">5:00 PM and 6:00 PM</strong> to confirm
+                participation and complete any pending entry-fee payment.
               </p>
             </div>
             <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">5:00 PM – 6:00 PM Slot</div>
@@ -909,7 +1066,8 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">09</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Dress Code</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                Modest, neat, and dignified attire suitable for church grounds and sacred choral performance is expected from all choir members.
+                Modest, neat, and dignified attire suitable for church grounds and sacred choral performance is expected
+                from all choir members.
               </p>
             </div>
             <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Modest &amp; Dignified</div>
@@ -920,10 +1078,12 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">10</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Discipline &amp; Conduct</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                Participants must respect volunteers, judges, and fellow choir teams. Any misconduct or disruptive behavior may lead to immediate disqualification.
+                Participants must respect volunteers, judges, and fellow choir teams. Any misconduct or disruptive
+                behavior may lead to immediate disqualification.
               </p>
             </div>
-            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Mutual Respect &amp; Brotherhood</div>
+            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Mutual Respect &amp;
+              Brotherhood</div>
           </div>
 
           <div class="surface-wine rounded-xl p-5 sm:p-6 flex flex-col justify-between">
@@ -931,7 +1091,8 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">11</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Judges' Decision</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                The adjudication panel's decision is <strong class="text-[#E4D2A8]">final, binding, and irrevocable</strong> for all categories, awards, and prizes.
+                The adjudication panel's decision is <strong class="text-[#E4D2A8]">final, binding, and
+                  irrevocable</strong> for all categories, awards, and prizes.
               </p>
             </div>
             <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Final &amp; Binding</div>
@@ -942,10 +1103,12 @@
               <span class="font-sans text-xs font-semibold text-[#B99A58]">12</span>
               <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Late Arrival Policy</h3>
               <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-                Groups arriving after the designated reporting window will <strong class="text-[#E4D2A8]">perform at the end of the schedule</strong>, subject to committee discretion.
+                Groups arriving after the designated reporting window will <strong class="text-[#E4D2A8]">perform at the
+                  end of the schedule</strong>, subject to committee discretion.
               </p>
             </div>
-            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Late Choirs Perform at End</div>
+            <div class="mt-3 pt-2 border-t border-[#B99A58]/20 text-[11px] text-[#B99A58]">Late Choirs Perform at End
+            </div>
           </div>
         </div>
 
@@ -953,9 +1116,12 @@
         <div id="tab-panel-reporting" class="hidden mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
           <div class="surface-wine rounded-xl p-6">
             <span class="font-sans text-xs font-semibold text-[#B99A58]">I</span>
-            <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">On-Site Reporting &amp; Soundcheck (05:00 PM)</h3>
+            <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">On-Site Reporting &amp; Soundcheck (05:00
+              PM)</h3>
             <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-              All registered choirs must report on-site at the <strong class="text-[#E4D2A8]">OLPS Church Hospitality Desk from 05:00 PM onwards</strong> for acoustic soundcheck, team roster verification, and stage sequence lot draw before the 06:00 PM invocation.
+              All registered choirs must report on-site at the <strong class="text-[#E4D2A8]">OLPS Church Hospitality
+                Desk from 05:00 PM onwards</strong> for acoustic soundcheck, team roster verification, and stage
+              sequence lot draw before the 06:00 PM invocation.
             </p>
           </div>
 
@@ -963,15 +1129,19 @@
             <span class="font-sans text-xs font-semibold text-[#B99A58]">II</span>
             <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Lyric Sheets &amp; Stage Transition</h3>
             <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-              Submit <strong class="text-[#E4D2A8]">3 printed copies of carol lyrics</strong> (with English translation if sung in regional languages) upon reporting. Instrument patching must be completed within 2 minutes.
+              Submit <strong class="text-[#E4D2A8]">3 printed copies of carol lyrics</strong> (with English translation
+              if sung in regional languages) upon reporting. Instrument patching must be completed within 2 minutes.
             </p>
           </div>
 
           <div class="surface-wine rounded-xl p-6">
             <span class="font-sans text-xs font-semibold text-[#B99A58]">III</span>
-            <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Choir Attire &amp; Sanctuary Reverence</h3>
+            <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Choir Attire &amp; Sanctuary Reverence
+            </h3>
             <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-              Coordinated festive or liturgical choir attire is required. Hosted within the sacred grounds of <strong class="text-[#E4D2A8]">OLPS Church, Dharwad</strong>, dignified sanctuary decorum is expected from all participants.
+              Coordinated festive or liturgical choir attire is required. Hosted within the sacred grounds of <strong
+                class="text-[#E4D2A8]">OLPS Church, Dharwad</strong>, dignified sanctuary decorum is expected from all
+              participants.
             </p>
           </div>
 
@@ -979,7 +1149,8 @@
             <span class="font-sans text-xs font-semibold text-[#B99A58]">IV</span>
             <h3 class="mt-1 font-display text-lg font-semibold text-[#E4D2A8]">Parish Hospitality &amp; Supper</h3>
             <p class="mt-2 text-sm text-[#F4EEE3]/85 leading-relaxed">
-              Complimentary refreshments and parish fellowship dinner will be served to all registered choristers and accompanists following the prize distribution ceremony.
+              Complimentary refreshments and parish fellowship dinner will be served to all registered choristers and
+              accompanists following the prize distribution ceremony.
             </p>
           </div>
         </div>
@@ -1001,29 +1172,35 @@
               Photo Gallery
             </h2>
             <p class="mt-1.5 text-xs sm:text-sm text-[#17110F]/75">
-              Explore the complete photographic collection: festive moments, choir rehearsals, sanctuary stages, and highlight reels.
+              Explore the complete photographic collection: festive moments, choir rehearsals, sanctuary stages, and
+              highlight reels.
             </p>
           </div>
 
           <!-- Gallery Filter Pills -->
           <div class="flex flex-wrap gap-2">
-            <button type="button" onclick="filterChronicles('all')" data-filter="all" data-chime class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-semibold bg-[#26090E] text-[#E4D2A8]">
+            <button type="button" onclick="filterChronicles('all')" data-filter="all" data-chime
+              class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-semibold bg-[#26090E] text-[#E4D2A8]">
               All Photos &amp; Videos
             </button>
-            <button type="button" onclick="filterChronicles('2026')" data-filter="2026" data-chime class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
+            <button type="button" onclick="filterChronicles('2026')" data-filter="2026" data-chime
+              class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
               2K26 Moments
             </button>
-            <button type="button" onclick="filterChronicles('2025')" data-filter="2025" data-chime class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
+            <button type="button" onclick="filterChronicles('2025')" data-filter="2025" data-chime
+              class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
               2025 Editions
             </button>
-            <button type="button" onclick="filterChronicles('video')" data-filter="video" data-chime class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
+            <button type="button" onclick="filterChronicles('video')" data-filter="video" data-chime
+              class="chronicle-filter-btn min-h-[40px] px-4 rounded-lg text-xs font-sans font-medium bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F]">
               Live Videos
             </button>
           </div>
         </div>
 
         <!-- Photograph-First Editorial Gallery Grid (All Photos in One Gallery) -->
-        <div id="chronicles-bento-grid" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+        <div id="chronicles-bento-grid"
+          class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
 
         <!-- 27-Slot Lightbox Archive Bar -->
         <div class="mt-8 surface-ivory rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -1032,10 +1209,12 @@
               Complete Parish Photo &amp; Video Gallery
             </h3>
             <p class="text-xs text-[#17110F]/75 mt-0.5">
-              Open the touch-swipeable Lightbox to browse 2024 Inaugural moments, 2025 Grand Carols photos &amp; live stage reels, and the 2K26 Official Poster.
+              Open the touch-swipeable Lightbox to browse 2024 Inaugural moments, 2025 Grand Carols photos &amp; live
+              stage reels, and the 2K26 Official Poster.
             </p>
           </div>
-          <button type="button" onclick="openLightbox(0)" data-chime class="w-full sm:w-auto min-h-[44px] px-5 rounded-lg bg-[#26090E] hover:bg-[#42131B] text-[#E4D2A8] font-sans font-medium text-xs shrink-0 transition-colors">
+          <button type="button" onclick="openLightbox(0)" data-chime
+            class="w-full sm:w-auto min-h-[44px] px-5 rounded-lg bg-[#26090E] hover:bg-[#42131B] text-[#E4D2A8] font-sans font-medium text-xs shrink-0 transition-colors">
             Open Photo &amp; Video Lightbox
           </button>
         </div>
@@ -1045,7 +1224,8 @@
     <!-- =====================================================================
          SECTION 7: TITLE PATRON & COMMUNITY SPONSORS (WARM IVORY #F4EEE3)
     ====================================================================== -->
-    <section id="patrons" class="bg-[#F4EEE3] text-[#17110F] pb-16 sm:pb-24 pt-6 px-4 sm:px-8 border-b border-[#26090E]/15">
+    <section id="patrons"
+      class="bg-[#F4EEE3] text-[#17110F] pb-16 sm:pb-24 pt-6 px-4 sm:px-8 border-b border-[#26090E]/15">
       <div class="max-w-6xl mx-auto reveal-section">
         <div class="pt-12 border-t border-[#26090E]/15">
           <p class="font-sans text-xs font-semibold tracking-[0.16em] text-[#42131B] uppercase">
@@ -1057,20 +1237,18 @@
         </div>
 
         <!-- Title Sponsor Spotlight: Namma Kitchen (Hubballi) with Original Brand Wordmark -->
-        <div class="mt-8 surface-ivory rounded-xl p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        <div
+          class="mt-8 surface-ivory rounded-xl p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
           <div class="space-y-3">
             <span class="inline-block font-sans text-xs font-semibold tracking-[0.14em] text-[#42131B] uppercase">
               Title Sponsor / Patron Spotlight
             </span>
             <div>
               <!-- Official Namma Kitchen Logo with Crisp Dark-Badge Fallback -->
-              <img
-                src="https://lh3.googleusercontent.com/d/1_z_gXfHeXUU88KMhegH4Pg2AR3jur6hD"
-                alt="Namma Kitchen Hubballi Official Logo"
-                loading="lazy"
+              <img src="https://lh3.googleusercontent.com/d/1_z_gXfHeXUU88KMhegH4Pg2AR3jur6hD"
+                alt="Namma Kitchen Hubballi Official Logo" loading="lazy"
                 class="h-16 sm:h-20 w-auto max-w-[240px] object-contain rounded-lg"
-                onerror="this.style.display='none'; document.getElementById('namma-kitchen-fallback').classList.remove('hidden');"
-              />
+                onerror="this.style.display='none'; document.getElementById('namma-kitchen-fallback').classList.remove('hidden');" />
               <div id="namma-kitchen-fallback" class="hidden px-6 py-4 rounded-lg bg-[#14181E] flex-col items-start">
                 <div class="font-sans text-xl sm:text-2xl font-bold tracking-[0.1em] leading-none">
                   <span class="text-white">NAMMA</span>
@@ -1091,10 +1269,12 @@
               Gokul Road, Opp. Shell Petroleum, Rajendra Nagar, Hubballi
             </p>
             <div class="pt-2 flex flex-wrap gap-2.5">
-              <a href="https://nammakitchen.store" target="_blank" rel="noopener" class="min-h-[42px] px-4 rounded-lg bg-[#26090E] hover:bg-[#42131B] text-[#E4D2A8] font-sans font-medium text-xs inline-flex items-center transition-colors">
+              <a href="https://nammakitchen.store" target="_blank" rel="noopener"
+                class="min-h-[42px] px-4 rounded-lg bg-[#26090E] hover:bg-[#42131B] text-[#E4D2A8] font-sans font-medium text-xs inline-flex items-center transition-colors">
                 nammakitchen.store ↗
               </a>
-              <a href="tel:+919035923812" class="min-h-[42px] px-4 rounded-lg bg-[#FAF6EE] hover:bg-white border border-[#26090E]/20 text-[#17110F] font-sans font-medium text-xs inline-flex items-center transition-colors">
+              <a href="tel:+919035923812"
+                class="min-h-[42px] px-4 rounded-lg bg-[#FAF6EE] hover:bg-white border border-[#26090E]/20 text-[#17110F] font-sans font-medium text-xs inline-flex items-center transition-colors">
                 +91 90359 23812
               </a>
             </div>
@@ -1102,21 +1282,26 @@
         </div>
 
         <!-- Sponsor Opportunity Card -->
-        <div class="mt-8 surface-ivory rounded-xl p-8 border border-dashed border-[#B99A58]/60 text-center flex flex-col items-center justify-center">
-          <span class="inline-block px-3.5 py-1 rounded-full bg-[#26090E] text-[#E4D2A8] text-[11px] font-sans font-semibold tracking-wider uppercase mb-3">
+        <div
+          class="mt-8 surface-ivory rounded-xl p-8 border border-dashed border-[#B99A58]/60 text-center flex flex-col items-center justify-center">
+          <span
+            class="inline-block px-3.5 py-1 rounded-full bg-[#26090E] text-[#E4D2A8] text-[11px] font-sans font-semibold tracking-wider uppercase mb-3">
             Sponsorship
           </span>
           <h3 class="font-display text-xl sm:text-2xl font-semibold text-[#26090E]">
             Your sponsor and your number name will appear here
           </h3>
           <p class="mt-2 text-xs sm:text-sm text-[#17110F]/75 max-w-md leading-relaxed">
-            Interested in supporting KRISTANJALI? Connect with the organizing team to feature your brand, organization, or family name.
+            Interested in supporting KRISTANJALI? Connect with the organizing team to feature your brand, organization,
+            or family name.
           </p>
           <div class="mt-5 flex flex-wrap items-center justify-center gap-3">
-            <a href="tel:+919110697931" class="min-h-[42px] px-5 rounded-lg bg-[#26090E] hover:bg-[#42131B] text-[#E4D2A8] font-sans font-medium text-xs inline-flex items-center transition-colors">
+            <a href="tel:+919110697931"
+              class="min-h-[42px] px-5 rounded-lg bg-[#26090E] hover:bg-[#42131B] text-[#E4D2A8] font-sans font-medium text-xs inline-flex items-center transition-colors">
               Call Mr. Winston (+91 91106 97931)
             </a>
-            <a href="tel:+918073128308" class="min-h-[42px] px-5 rounded-lg bg-[#FAF6EE] hover:bg-white border border-[#26090E]/20 text-[#17110F] font-sans font-medium text-xs inline-flex items-center transition-colors">
+            <a href="tel:+918073128308"
+              class="min-h-[42px] px-5 rounded-lg bg-[#FAF6EE] hover:bg-white border border-[#26090E]/20 text-[#17110F] font-sans font-medium text-xs inline-flex items-center transition-colors">
               Call Mr. Bosco (+91 80731 28308)
             </a>
           </div>
@@ -1137,7 +1322,8 @@
             Organizing Committee
           </h2>
           <p class="mt-2 text-sm text-[#F4EEE3]/80 leading-relaxed">
-            For choir registration queries, acoustic requirements, website support, or parish patronage, contact the organizing team directly.
+            For choir registration queries, acoustic requirements, website support, or parish patronage, contact the
+            organizing team directly.
           </p>
         </div>
 
@@ -1153,10 +1339,13 @@
               <p class="mt-0.5 font-sans text-sm text-[#F4EEE3]">+91 91106 97931</p>
             </div>
             <div class="mt-4 grid grid-cols-2 gap-2.5">
-              <a href="tel:+919110697931" class="min-h-[44px] px-3 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs flex items-center justify-center transition-colors">
+              <a href="tel:+919110697931"
+                class="min-h-[44px] px-3 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs flex items-center justify-center transition-colors">
                 Call
               </a>
-              <a href="https://wa.me/919110697931?text=Hello%20Mr.%20Winston%2C%20our%20choir%20would%20like%20to%20connect%20regarding%20KRISTANJALI%20at%20OLPS%20Church%2C%20Dharwad." target="_blank" rel="noopener" class="min-h-[44px] px-3 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs flex items-center justify-center transition-colors">
+              <a href="https://wa.me/919110697931?text=Hello%20Mr.%20Winston%2C%20our%20choir%20would%20like%20to%20connect%20regarding%20KRISTANJALI%20at%20OLPS%20Church%2C%20Dharwad."
+                target="_blank" rel="noopener"
+                class="min-h-[44px] px-3 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs flex items-center justify-center transition-colors">
                 WhatsApp
               </a>
             </div>
@@ -1172,10 +1361,13 @@
               <p class="mt-0.5 font-sans text-sm text-[#F4EEE3]">+91 80731 28308</p>
             </div>
             <div class="mt-4 grid grid-cols-2 gap-2.5">
-              <a href="tel:+918073128308" class="min-h-[44px] px-3 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs flex items-center justify-center transition-colors">
+              <a href="tel:+918073128308"
+                class="min-h-[44px] px-3 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs flex items-center justify-center transition-colors">
                 Call
               </a>
-              <a href="https://wa.me/918073128308?text=Hello%20Mr.%20Bosco%2C%20our%20choir%20would%20like%20to%20connect%20regarding%20KRISTANJALI%20at%20OLPS%20Church%2C%20Dharwad." target="_blank" rel="noopener" class="min-h-[44px] px-3 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs flex items-center justify-center transition-colors">
+              <a href="https://wa.me/918073128308?text=Hello%20Mr.%20Bosco%2C%20our%20choir%20would%20like%20to%20connect%20regarding%20KRISTANJALI%20at%20OLPS%20Church%2C%20Dharwad."
+                target="_blank" rel="noopener"
+                class="min-h-[44px] px-3 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs flex items-center justify-center transition-colors">
                 WhatsApp
               </a>
             </div>
@@ -1191,10 +1383,13 @@
               <p class="mt-0.5 font-sans text-sm text-[#F4EEE3]">+91 76196 87402</p>
             </div>
             <div class="mt-4 grid grid-cols-2 gap-2.5">
-              <a href="tel:+917619687402" class="min-h-[44px] px-3 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs flex items-center justify-center transition-colors">
+              <a href="tel:+917619687402"
+                class="min-h-[44px] px-3 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs flex items-center justify-center transition-colors">
                 Call
               </a>
-              <a href="https://wa.me/917619687402?text=Hello%20Samson%2C%20I%20have%20a%20website%20inquiry%20regarding%20KRISTANJALI%20at%20OLPS%20Church%2C%20Dharwad." target="_blank" rel="noopener" class="min-h-[44px] px-3 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs flex items-center justify-center transition-colors">
+              <a href="https://wa.me/917619687402?text=Hello%20Samson%2C%20I%20have%20a%20website%20inquiry%20regarding%20KRISTANJALI%20at%20OLPS%20Church%2C%20Dharwad."
+                target="_blank" rel="noopener"
+                class="min-h-[44px] px-3 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs flex items-center justify-center transition-colors">
                 WhatsApp
               </a>
             </div>
@@ -1216,25 +1411,34 @@
           <form id="choir-desk-form" onsubmit="handleChoirDeskSubmit(event)" class="mt-6 space-y-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label for="desk-name" class="block font-sans text-xs font-medium text-[#E4D2A8] mb-1.5">Your Name *</label>
-                <input id="desk-name" type="text" required placeholder="e.g., Rohan D'Souza" class="w-full min-h-[46px] px-3.5 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] placeholder-[#F4EEE3]/40 focus:outline-none focus:border-[#E4D2A8]" />
+                <label for="desk-name" class="block font-sans text-xs font-medium text-[#E4D2A8] mb-1.5">Your Name
+                  *</label>
+                <input id="desk-name" type="text" required placeholder="e.g., Rohan D'Souza"
+                  class="w-full min-h-[46px] px-3.5 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] placeholder-[#F4EEE3]/40 focus:outline-none focus:border-[#E4D2A8]" />
               </div>
               <div>
-                <label for="desk-choir" class="block font-sans text-xs font-medium text-[#E4D2A8] mb-1.5">Choir / Parish *</label>
-                <input id="desk-choir" type="text" required placeholder="e.g., St. Joseph's Choir, Hubballi" class="w-full min-h-[46px] px-3.5 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] placeholder-[#F4EEE3]/40 focus:outline-none focus:border-[#E4D2A8]" />
+                <label for="desk-choir" class="block font-sans text-xs font-medium text-[#E4D2A8] mb-1.5">Choir / Parish
+                  *</label>
+                <input id="desk-choir" type="text" required placeholder="e.g., St. Joseph's Choir, Hubballi"
+                  class="w-full min-h-[46px] px-3.5 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] placeholder-[#F4EEE3]/40 focus:outline-none focus:border-[#E4D2A8]" />
               </div>
             </div>
 
             <div>
-              <label for="desk-message" class="block font-sans text-xs font-medium text-[#E4D2A8] mb-1.5">Message / Question *</label>
-              <textarea id="desk-message" rows="3" required placeholder="Share your inquiry or message for the organizing team..." class="w-full p-3.5 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] placeholder-[#F4EEE3]/40 focus:outline-none focus:border-[#E4D2A8]"></textarea>
+              <label for="desk-message" class="block font-sans text-xs font-medium text-[#E4D2A8] mb-1.5">Message /
+                Question *</label>
+              <textarea id="desk-message" rows="3" required
+                placeholder="Share your inquiry or message for the organizing team..."
+                class="w-full p-3.5 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] placeholder-[#F4EEE3]/40 focus:outline-none focus:border-[#E4D2A8]"></textarea>
             </div>
 
             <div class="flex flex-col sm:flex-row gap-3 pt-1">
-              <button type="submit" data-chime class="flex-1 min-h-[46px] px-5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs tracking-wide transition-colors">
+              <button type="submit" data-chime
+                class="flex-1 min-h-[46px] px-5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs tracking-wide transition-colors">
                 Send via WhatsApp to OLPS Youth
               </button>
-              <button type="button" onclick="sendDeskEmail()" data-chime class="min-h-[46px] px-5 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/40 text-[#E4D2A8] font-sans font-medium text-xs tracking-wide transition-colors">
+              <button type="button" onclick="sendDeskEmail()" data-chime
+                class="min-h-[46px] px-5 rounded-lg bg-[#26090E] hover:bg-[#26090E]/80 border border-[#B99A58]/40 text-[#E4D2A8] font-sans font-medium text-xs tracking-wide transition-colors">
                 Send via Email
               </button>
             </div>
@@ -1256,7 +1460,8 @@
         </p>
         <p class="font-sans text-xs text-[#F4EEE3]/70">
           12th Cross, Nirmal Nagar, Dharwad &nbsp;•&nbsp;
-          <a href="https://www.instagram.com/olps_youth_dharwad/" target="_blank" rel="noopener" class="text-[#B99A58] hover:text-[#E4D2A8] underline underline-offset-4">
+          <a href="https://www.instagram.com/olps_youth_dharwad/" target="_blank" rel="noopener"
+            class="text-[#B99A58] hover:text-[#E4D2A8] underline underline-offset-4">
             @olps_youth_dharwad
           </a>
         </p>
@@ -1274,12 +1479,15 @@
   <!-- =========================================================================
        MOBILE STICKY THUMB-ZONE ACTION BAR (< 768px)
   ========================================================================== -->
-  <div id="mobile-sticky-bar" class="md:hidden fixed bottom-0 inset-x-0 z-30 bg-[#26090E]/95 backdrop-blur-md border-t border-[#B99A58]/35 px-3 pt-2.5 mobile-thumb-bar">
+  <div id="mobile-sticky-bar"
+    class="md:hidden fixed bottom-0 inset-x-0 z-30 bg-[#26090E]/95 backdrop-blur-md border-t border-[#B99A58]/35 px-3 pt-2.5 mobile-thumb-bar">
     <div class="grid grid-cols-2 gap-2.5">
-      <button type="button" onclick="openRegistrationDrawer()" data-chime class="min-h-[44px] rounded-lg bg-[#B99A58] text-[#17110F] font-sans font-semibold text-xs tracking-wide">
+      <button type="button" onclick="openRegistrationDrawer()" data-chime
+        class="min-h-[44px] rounded-lg bg-[#B99A58] text-[#17110F] font-sans font-semibold text-xs tracking-wide">
         Register Choir
       </button>
-      <button type="button" onclick="openVenueModal()" data-chime class="min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/40 text-[#E4D2A8] font-sans font-medium text-xs tracking-wide">
+      <button type="button" onclick="openVenueModal()" data-chime
+        class="min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/40 text-[#E4D2A8] font-sans font-medium text-xs tracking-wide">
         Venue &amp; Map
       </button>
     </div>
@@ -1290,10 +1498,8 @@
   ========================================================================== -->
   <div id="concierge-widget" class="fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-40">
     <!-- Interactive Pop-up Teaser Bubble -->
-    <div
-      id="concierge-teaser-bubble"
-      class="mb-2.5 max-w-[270px] sm:max-w-[310px] ml-auto relative rounded-xl bg-[#26090E]/95 border border-[#B99A58]/55 shadow-2xl shadow-[#17110F]/80 p-3.5 backdrop-blur-md transition-all duration-300 animate-teaser-float"
-    >
+    <div id="concierge-teaser-bubble"
+      class="mb-2.5 max-w-[270px] sm:max-w-[310px] ml-auto relative rounded-xl bg-[#26090E]/95 border border-[#B99A58]/55 shadow-2xl shadow-[#17110F]/80 p-3.5 backdrop-blur-md transition-all duration-300 animate-teaser-float">
       <div class="flex items-start justify-between gap-2">
         <div class="cursor-pointer group" onclick="toggleConciergeChat(true)">
           <div class="flex items-center gap-1.5 mb-1">
@@ -1305,50 +1511,39 @@
           <p class="font-sans text-xs font-medium text-[#F4EEE3] leading-snug">
             If you have any doubts, you can ask me here — let's chat!
           </p>
-          <span class="inline-flex items-center gap-1 mt-2 font-sans text-[11px] font-semibold text-[#E4D2A8] group-hover:text-white transition-colors">
+          <span
+            class="inline-flex items-center gap-1 mt-2 font-sans text-[11px] font-semibold text-[#E4D2A8] group-hover:text-white transition-colors">
             Ask a question <span>→</span>
           </span>
         </div>
-        <button
-          type="button"
-          onclick="event.stopPropagation(); dismissConciergeTeaser();"
-          aria-label="Dismiss message"
-          title="Dismiss"
-          class="text-[#F4EEE3]/50 hover:text-[#E4D2A8] text-xs p-1 -mr-1 -mt-1 transition-colors"
-        >
+        <button type="button" onclick="event.stopPropagation(); dismissConciergeTeaser();" aria-label="Dismiss message"
+          title="Dismiss" class="text-[#F4EEE3]/50 hover:text-[#E4D2A8] text-xs p-1 -mr-1 -mt-1 transition-colors">
           ✕
         </button>
       </div>
       <!-- Triangle Pointer Indicator pointing to Ask KRISTANJALI button -->
-      <div class="absolute -bottom-1.5 right-6 w-3 h-3 bg-[#26090E] border-r border-b border-[#B99A58]/55 rotate-45"></div>
+      <div class="absolute -bottom-1.5 right-6 w-3 h-3 bg-[#26090E] border-r border-b border-[#B99A58]/55 rotate-45">
+      </div>
     </div>
 
     <!-- Launcher Button -->
-    <button
-      type="button"
-      id="concierge-toggle-btn"
-      onclick="toggleConciergeChat()"
-      aria-expanded="false"
+    <button type="button" id="concierge-toggle-btn" onclick="toggleConciergeChat()" aria-expanded="false"
       aria-controls="concierge-panel"
-      class="min-h-[46px] px-4 rounded-full bg-[#42131B] hover:bg-[#26090E] border border-[#B99A58]/60 text-[#E4D2A8] shadow-lg shadow-[#17110F]/60 flex items-center gap-2.5 font-sans text-xs font-medium transition-colors"
-    >
+      class="min-h-[46px] px-4 rounded-full bg-[#42131B] hover:bg-[#26090E] border border-[#B99A58]/60 text-[#E4D2A8] shadow-lg shadow-[#17110F]/60 flex items-center gap-2.5 font-sans text-xs font-medium transition-colors">
       <span class="w-2 h-2 rounded-full bg-[#B99A58]"></span>
       <span>Ask KRISTANJALI</span>
     </button>
 
     <!-- Chat Panel -->
-    <div
-      id="concierge-panel"
-      role="dialog"
-      aria-label="KRISTANJALI Event Concierge"
-      class="hidden mt-2 w-[calc(100vw-2rem)] sm:w-[370px] rounded-xl bg-[#26090E] border border-[#B99A58]/50 shadow-2xl shadow-[#17110F]/85 overflow-hidden flex flex-col"
-    >
+    <div id="concierge-panel" role="dialog" aria-label="KRISTANJALI Event Concierge"
+      class="hidden mt-2 w-[calc(100vw-2rem)] sm:w-[370px] rounded-xl bg-[#26090E] border border-[#B99A58]/50 shadow-2xl shadow-[#17110F]/85 overflow-hidden flex flex-col">
       <div class="px-4 py-3 bg-[#42131B] border-b border-[#B99A58]/30 flex items-center justify-between">
         <div>
           <p class="font-display text-sm font-semibold text-[#E4D2A8]">KRISTANJALI Concierge</p>
           <p class="font-sans text-[11px] text-[#F4EEE3]/75">OLPS Church, Dharwad • Instant Guide</p>
         </div>
-        <button type="button" onclick="toggleConciergeChat(false)" aria-label="Close Concierge Chat" class="min-w-[36px] min-h-[36px] rounded-lg bg-[#26090E]/80 border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center text-xs">
+        <button type="button" onclick="toggleConciergeChat(false)" aria-label="Close Concierge Chat"
+          class="min-w-[36px] min-h-[36px] rounded-lg bg-[#26090E]/80 border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center text-xs">
           ✕
         </button>
       </div>
@@ -1356,35 +1551,38 @@
       <!-- Messages Feed -->
       <div id="concierge-messages" class="p-3.5 h-64 overflow-y-auto space-y-2.5 text-xs font-sans">
         <div class="p-3 rounded-lg bg-[#42131B]/85 border border-[#B99A58]/25 text-[#F4EEE3] leading-relaxed">
-          Peace &amp; blessings! Ask me anything about <strong>KRISTANJALI 2K26</strong>—schedule &amp; 5:00 PM soundcheck, registration, prizes, rules, venue directions, or contacts (Mr. Winston, Mr. Bosco &amp; Samson).
+          Peace &amp; blessings! Ask me anything about <strong>KRISTANJALI 2K26</strong>—schedule &amp; 5:00 PM
+          soundcheck, registration, prizes, rules, venue directions, or contacts (Mr. Winston, Mr. Bosco &amp; Samson).
         </div>
       </div>
 
       <!-- Quick Prompt Chips -->
       <div class="px-3.5 pb-2.5 flex flex-wrap gap-1.5">
-        <button type="button" onclick="askConciergePreset('Date, timings & 5:00 PM soundcheck')" class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
+        <button type="button" onclick="askConciergePreset('Date, timings & 5:00 PM soundcheck')"
+          class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
           Timings &amp; 5 PM
         </button>
-        <button type="button" onclick="askConciergePreset('How to register & entry fee?')" class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
+        <button type="button" onclick="askConciergePreset('How to register & entry fee?')"
+          class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
           Registration &amp; Fee
         </button>
-        <button type="button" onclick="askConciergePreset('Prizes & choir rules')" class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
+        <button type="button" onclick="askConciergePreset('Prizes & choir rules')"
+          class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
           Prizes &amp; Rules
         </button>
-        <button type="button" onclick="askConciergePreset('Contacts & Samson website inquiry')" class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
+        <button type="button" onclick="askConciergePreset('Contacts & Samson website inquiry')"
+          class="px-2.5 py-1 rounded-full bg-[#42131B] hover:bg-[#B99A58] hover:text-[#17110F] border border-[#B99A58]/30 text-[11px] text-[#E4D2A8] transition-colors">
           Contacts
         </button>
       </div>
 
       <!-- Input Bar -->
-      <form onsubmit="handleConciergeSubmit(event)" class="p-2.5 bg-[#42131B]/60 border-t border-[#B99A58]/25 flex gap-2">
-        <input
-          id="concierge-input"
-          type="text"
-          placeholder="Ask a question..."
-          class="flex-1 min-h-[40px] px-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-xs text-[#F4EEE3] placeholder-[#F4EEE3]/45 focus:outline-none focus:border-[#E4D2A8]"
-        />
-        <button type="submit" class="min-h-[40px] px-3.5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs transition-colors">
+      <form onsubmit="handleConciergeSubmit(event)"
+        class="p-2.5 bg-[#42131B]/60 border-t border-[#B99A58]/25 flex gap-2">
+        <input id="concierge-input" type="text" placeholder="Ask a question..."
+          class="flex-1 min-h-[40px] px-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-xs text-[#F4EEE3] placeholder-[#F4EEE3]/45 focus:outline-none focus:border-[#E4D2A8]" />
+        <button type="submit"
+          class="min-h-[40px] px-3.5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs transition-colors">
           Send
         </button>
       </form>
@@ -1394,16 +1592,20 @@
   <!-- =========================================================================
        MODAL 1: CHOIR REGISTRATION DRAWER
   ========================================================================== -->
-  <div id="registration-drawer" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-label="Choir Registration">
+  <div id="registration-drawer" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true"
+    aria-label="Choir Registration">
     <div onclick="closeAllModals()" class="absolute inset-0 bg-[#17110F]/80 backdrop-blur-xs"></div>
-    <div class="relative ml-auto w-full max-w-lg h-full bg-[#26090E] border-l border-[#B99A58]/35 p-5 sm:p-7 overflow-y-auto flex flex-col justify-between">
+    <div
+      class="relative ml-auto w-full max-w-lg h-full bg-[#26090E] border-l border-[#B99A58]/35 p-5 sm:p-7 overflow-y-auto flex flex-col justify-between">
       <div class="space-y-5">
         <div class="flex items-start justify-between gap-3 pb-4 border-b border-[#B99A58]/25">
           <div>
-            <span class="font-sans text-xs font-medium text-[#B99A58] uppercase tracking-wider">Official Entry • 2K26</span>
+            <span class="font-sans text-xs font-medium text-[#B99A58] uppercase tracking-wider">Official Entry •
+              2K26</span>
             <h2 class="font-display text-2xl font-semibold text-[#E4D2A8] mt-0.5">Register Your Choir</h2>
           </div>
-          <button type="button" onclick="closeAllModals()" aria-label="Close Registration Drawer" class="min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center">
+          <button type="button" onclick="closeAllModals()" aria-label="Close Registration Drawer"
+            class="min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center">
             ✕
           </button>
         </div>
@@ -1421,23 +1623,24 @@
         <!-- Google Form CTA & Scannable QR Card -->
         <div class="p-5 rounded-xl surface-wine flex flex-col sm:flex-row items-center gap-4">
           <div class="p-2.5 rounded-lg bg-[#F4EEE3] border border-[#B99A58] shrink-0">
-            <svg class="w-24 h-24 text-[#17110F]" viewBox="0 0 100 100" fill="currentColor" aria-label="Registration QR Code">
-              <rect x="8" y="8" width="26" height="26" fill="none" stroke="currentColor" stroke-width="5"/>
-              <rect x="14" y="14" width="14" height="14"/>
-              <rect x="66" y="8" width="26" height="26" fill="none" stroke="currentColor" stroke-width="5"/>
-              <rect x="72" y="14" width="14" height="14"/>
-              <rect x="8" y="66" width="26" height="26" fill="none" stroke="currentColor" stroke-width="5"/>
-              <rect x="14" y="72" width="14" height="14"/>
-              <rect x="42" y="10" width="6" height="16"/>
-              <rect x="52" y="18" width="8" height="8"/>
-              <rect x="42" y="42" width="16" height="16" fill="#42131B"/>
-              <rect x="10" y="44" width="14" height="6"/>
-              <rect x="28" y="48" width="8" height="10"/>
-              <rect x="66" y="44" width="12" height="8"/>
-              <rect x="82" y="52" width="10" height="12"/>
-              <rect x="44" y="68" width="10" height="12"/>
-              <rect x="62" y="70" width="14" height="8"/>
-              <rect x="80" y="76" width="12" height="14"/>
+            <svg class="w-24 h-24 text-[#17110F]" viewBox="0 0 100 100" fill="currentColor"
+              aria-label="Registration QR Code">
+              <rect x="8" y="8" width="26" height="26" fill="none" stroke="currentColor" stroke-width="5" />
+              <rect x="14" y="14" width="14" height="14" />
+              <rect x="66" y="8" width="26" height="26" fill="none" stroke="currentColor" stroke-width="5" />
+              <rect x="72" y="14" width="14" height="14" />
+              <rect x="8" y="66" width="26" height="26" fill="none" stroke="currentColor" stroke-width="5" />
+              <rect x="14" y="72" width="14" height="14" />
+              <rect x="42" y="10" width="6" height="16" />
+              <rect x="52" y="18" width="8" height="8" />
+              <rect x="42" y="42" width="16" height="16" fill="#42131B" />
+              <rect x="10" y="44" width="14" height="6" />
+              <rect x="28" y="48" width="8" height="10" />
+              <rect x="66" y="44" width="12" height="8" />
+              <rect x="82" y="52" width="10" height="12" />
+              <rect x="44" y="68" width="10" height="12" />
+              <rect x="62" y="70" width="14" height="8" />
+              <rect x="80" y="76" width="12" height="14" />
             </svg>
           </div>
           <div class="text-center sm:text-left">
@@ -1445,7 +1648,10 @@
             <p class="text-xs text-[#F4EEE3]/80 mt-1 leading-relaxed">
               Submit your choir roster, parish details, and entry confirmation online.
             </p>
-            <a id="drawer-google-form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSenQTPoCaXOY6M0Yj8TNsVqn0kS0gcWWg6Kpt3bCT0jXSTD4Q/viewform?usp=send_form" target="_blank" rel="noopener" class="mt-3 w-full sm:w-auto min-h-[44px] px-5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs inline-flex items-center justify-center transition-colors">
+            <a id="drawer-google-form-link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSenQTPoCaXOY6M0Yj8TNsVqn0kS0gcWWg6Kpt3bCT0jXSTD4Q/viewform?usp=send_form"
+              target="_blank" rel="noopener"
+              class="mt-3 w-full sm:w-auto min-h-[44px] px-5 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs inline-flex items-center justify-center transition-colors">
               Open Registration Form ↗
             </a>
           </div>
@@ -1465,23 +1671,30 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
             <div class="p-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 flex flex-col justify-between">
               <div>
-                <p class="text-[#B99A58] font-semibold text-[11px] uppercase tracking-wider">Registration &amp; Payments</p>
+                <p class="text-[#B99A58] font-semibold text-[11px] uppercase tracking-wider">Registration &amp; Payments
+                </p>
                 <p class="text-sm font-semibold text-[#E4D2A8] mt-0.5">Mr. Bosco</p>
                 <a href="tel:+918073128308" class="text-xs text-[#F4EEE3] hover:text-[#B99A58]">+91 80731 28308</a>
               </div>
-              <a href="https://wa.me/918073128308?text=Hello%20Mr.%20Bosco%2C%20regarding%20Kristanjali%20payment%20confirmation." target="_blank" rel="noopener" class="mt-2 text-[11px] font-medium text-[#B99A58] hover:underline">WhatsApp Mr. Bosco →</a>
+              <a href="https://wa.me/918073128308?text=Hello%20Mr.%20Bosco%2C%20regarding%20Kristanjali%20payment%20confirmation."
+                target="_blank" rel="noopener"
+                class="mt-2 text-[11px] font-medium text-[#B99A58] hover:underline">WhatsApp Mr. Bosco →</a>
             </div>
             <div class="p-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 flex flex-col justify-between">
               <div>
-                <p class="text-[#B99A58] font-semibold text-[11px] uppercase tracking-wider">Event Coordinator (PhonePe)</p>
+                <p class="text-[#B99A58] font-semibold text-[11px] uppercase tracking-wider">Event Coordinator (PhonePe)
+                </p>
                 <p class="text-sm font-semibold text-[#E4D2A8] mt-0.5">Mr. Winston</p>
                 <a href="tel:+919110697931" class="text-xs text-[#F4EEE3] hover:text-[#B99A58]">+91 91106 97931</a>
               </div>
-              <a href="https://wa.me/919110697931?text=Hello%20Mr.%20Winston%2C%20regarding%20Kristanjali%20payment%20confirmation." target="_blank" rel="noopener" class="mt-2 text-[11px] font-medium text-[#B99A58] hover:underline">WhatsApp Mr. Winston →</a>
+              <a href="https://wa.me/919110697931?text=Hello%20Mr.%20Winston%2C%20regarding%20Kristanjali%20payment%20confirmation."
+                target="_blank" rel="noopener"
+                class="mt-2 text-[11px] font-medium text-[#B99A58] hover:underline">WhatsApp Mr. Winston →</a>
             </div>
           </div>
           <div class="p-2.5 rounded-lg bg-[#42131B]/60 border border-[#B99A58]/20 text-[11px] text-[#E4D2A8]">
-            <p><strong>Cash payment option:</strong> Teams registered online or informing organizers in advance can also confirm and complete entry-fee payment in cash during the 5:00 PM – 6:00 PM slot on event day.</p>
+            <p><strong>Cash payment option:</strong> Teams registered online or informing organizers in advance can also
+              confirm and complete entry-fee payment in cash during the 5:00 PM – 6:00 PM slot on event day.</p>
           </div>
         </div>
 
@@ -1497,15 +1710,20 @@
           <div class="grid grid-cols-2 gap-3">
             <div>
               <label for="check-singers" class="block text-[11px] text-[#F4EEE3]/80 mb-1">Singers + Musicians</label>
-              <input id="check-singers" type="number" min="1" max="50" value="16" oninput="evaluateChoirReadiness()" class="w-full min-h-[44px] px-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] font-medium" />
+              <input id="check-singers" type="number" min="1" max="50" value="16" oninput="evaluateChoirReadiness()"
+                class="w-full min-h-[44px] px-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] font-medium" />
             </div>
             <div>
-              <label for="check-minutes" class="block text-[11px] text-[#F4EEE3]/80 mb-1">2-Carol Duration (Mins)</label>
-              <input id="check-minutes" type="number" step="0.5" min="1" max="20" value="8" oninput="evaluateChoirReadiness()" class="w-full min-h-[44px] px-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] font-medium" />
+              <label for="check-minutes" class="block text-[11px] text-[#F4EEE3]/80 mb-1">2-Carol Duration
+                (Mins)</label>
+              <input id="check-minutes" type="number" step="0.5" min="1" max="20" value="8"
+                oninput="evaluateChoirReadiness()"
+                class="w-full min-h-[44px] px-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-sm text-[#F4EEE3] font-medium" />
             </div>
           </div>
 
-          <div id="readiness-result-box" class="p-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-xs text-[#E4D2A8]">
+          <div id="readiness-result-box"
+            class="p-3 rounded-lg bg-[#26090E] border border-[#B99A58]/35 text-xs text-[#E4D2A8]">
             Compliant: 16 members (allowed: 8–20) &amp; 8.0 mins stage duration (allowed: max 9 mins [1+7+1]).
           </div>
         </div>
@@ -1513,7 +1731,8 @@
 
       <div class="pt-4 mt-5 border-t border-[#B99A58]/20 flex justify-between items-center text-xs text-[#F4EEE3]/70">
         <span>Queries: Mr. Winston / Mr. Bosco • Web: Samson (7619687402)</span>
-        <button type="button" onclick="closeAllModals()" class="underline text-[#E4D2A8] min-h-[40px] px-2">Close</button>
+        <button type="button" onclick="closeAllModals()"
+          class="underline text-[#E4D2A8] min-h-[40px] px-2">Close</button>
       </div>
     </div>
   </div>
@@ -1521,7 +1740,8 @@
   <!-- =========================================================================
        MODAL 2: VENUE & GOOGLE MAPS DIRECTIONS MODAL
   ========================================================================== -->
-  <div id="venue-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Venue Directions">
+  <div id="venue-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4" role="dialog"
+    aria-modal="true" aria-label="Venue Directions">
     <div onclick="closeAllModals()" class="absolute inset-0 bg-[#17110F]/80 backdrop-blur-xs"></div>
     <div class="relative w-full max-w-lg rounded-xl bg-[#26090E] border border-[#B99A58]/40 p-6 sm:p-7 space-y-4">
       <div class="flex items-start justify-between">
@@ -1529,20 +1749,27 @@
           <span class="font-sans text-xs font-medium text-[#B99A58] uppercase tracking-wider">Sacred Venue</span>
           <h3 class="font-display text-xl sm:text-2xl font-semibold text-[#E4D2A8] mt-0.5">OLPS Church, Dharwad</h3>
         </div>
-        <button type="button" onclick="closeAllModals()" aria-label="Close Venue Modal" class="min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center">✕</button>
+        <button type="button" onclick="closeAllModals()" aria-label="Close Venue Modal"
+          class="min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center">✕</button>
       </div>
 
       <div class="p-4 rounded-lg surface-wine space-y-2 text-sm text-[#F4EEE3]">
-        <p><strong>Address:</strong> Our Lady of Perpetual Succour (OLPS) Church, 12th Cross, Nirmal Nagar, Dharwad, Karnataka.</p>
+        <p><strong>Address:</strong> Our Lady of Perpetual Succour (OLPS) Church, 12th Cross, Nirmal Nagar, Dharwad,
+          Karnataka.</p>
         <p><strong>Date:</strong> Saturday, 19 December 2026</p>
-        <p><strong>Reporting &amp; Soundcheck:</strong> From 05:00 PM &nbsp;•&nbsp; <strong>Carols Begin:</strong> 06:00 PM</p>
+        <p><strong>Reporting &amp; Soundcheck:</strong> From 05:00 PM &nbsp;•&nbsp; <strong>Carols Begin:</strong> 06:00
+          PM</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-        <a id="venue-maps-link" href="https://www.google.com/maps/search/?api=1&query=Our+Lady+of+Perpetual+Succour+Church+12th+Cross+Nirmal+Nagar+Dharwad" target="_blank" rel="noopener" class="min-h-[44px] px-4 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs flex items-center justify-center transition-colors">
+        <a id="venue-maps-link"
+          href="https://www.google.com/maps/search/?api=1&query=Our+Lady+of+Perpetual+Succour+Church+12th+Cross+Nirmal+Nagar+Dharwad"
+          target="_blank" rel="noopener"
+          class="min-h-[44px] px-4 rounded-lg bg-[#B99A58] hover:bg-[#E4D2A8] text-[#17110F] font-sans font-semibold text-xs flex items-center justify-center transition-colors">
           Open Google Maps ↗
         </a>
-        <button type="button" onclick="downloadEventICS()" class="min-h-[44px] px-4 rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs">
+        <button type="button" onclick="downloadEventICS()"
+          class="min-h-[44px] px-4 rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] font-sans font-medium text-xs">
           Save Calendar (.ics)
         </button>
       </div>
@@ -1552,21 +1779,28 @@
   <!-- =========================================================================
        MODAL 3: PRINTABLE INVITATION & RULEBOOK PREVIEW MODAL
   ========================================================================== -->
-  <div id="document-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Document Preview">
+  <div id="document-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4" role="dialog"
+    aria-modal="true" aria-label="Document Preview">
     <div onclick="closeAllModals()" class="absolute inset-0 bg-[#17110F]/80 backdrop-blur-xs"></div>
-    <div class="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-xl bg-[#F4EEE3] text-[#17110F] border border-[#B99A58] p-6 sm:p-8">
+    <div
+      class="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-xl bg-[#F4EEE3] text-[#17110F] border border-[#B99A58] p-6 sm:p-8">
       <div class="flex items-center justify-between pb-3 border-b border-[#26090E]/15">
-        <span id="doc-modal-badge" class="font-sans text-xs font-semibold tracking-wider text-[#42131B] uppercase">Official Parish Document</span>
-        <button type="button" onclick="closeAllModals()" aria-label="Close Document Modal" class="min-w-[44px] min-h-[44px] rounded-lg bg-[#26090E] text-[#E4D2A8] flex items-center justify-center">✕</button>
+        <span id="doc-modal-badge"
+          class="font-sans text-xs font-semibold tracking-wider text-[#42131B] uppercase">Official Parish
+          Document</span>
+        <button type="button" onclick="closeAllModals()" aria-label="Close Document Modal"
+          class="min-w-[44px] min-h-[44px] rounded-lg bg-[#26090E] text-[#E4D2A8] flex items-center justify-center">✕</button>
       </div>
 
       <div id="print-area-target" class="mt-4 space-y-4"></div>
 
       <div class="mt-6 pt-4 border-t border-[#26090E]/15 flex flex-wrap gap-3 justify-end">
-        <a id="doc-drive-hook-btn" href="#" target="_blank" rel="noopener" class="min-h-[44px] px-4 rounded-lg bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F] font-sans text-xs font-medium inline-flex items-center">
+        <a id="doc-drive-hook-btn" href="#" target="_blank" rel="noopener"
+          class="min-h-[44px] px-4 rounded-lg bg-[#FAF6EE] border border-[#26090E]/20 text-[#17110F] font-sans text-xs font-medium inline-flex items-center">
           Open / Download Official Document ↗
         </a>
-        <button type="button" onclick="window.print()" class="min-h-[44px] px-5 rounded-lg bg-[#26090E] text-[#E4D2A8] font-sans text-xs font-semibold">
+        <button type="button" onclick="window.print()"
+          class="min-h-[44px] px-5 rounded-lg bg-[#26090E] text-[#E4D2A8] font-sans text-xs font-semibold">
           Print / Save PDF
         </button>
       </div>
@@ -1576,22 +1810,29 @@
   <!-- =========================================================================
        MODAL 4: TOUCH-SWIPEABLE CHRONICLES LIGHTBOX
   ========================================================================== -->
-  <div id="chronicles-lightbox" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+  <div id="chronicles-lightbox" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4" role="dialog"
+    aria-modal="true" aria-label="Photo Lightbox">
     <div onclick="closeAllModals()" class="absolute inset-0 bg-[#17110F]/90 backdrop-blur-xs"></div>
-    <div id="lightbox-touch-surface" class="relative w-full max-w-3xl rounded-xl bg-[#26090E] border border-[#B99A58]/40 p-4 sm:p-6 text-center select-none">
+    <div id="lightbox-touch-surface"
+      class="relative w-full max-w-3xl rounded-xl bg-[#26090E] border border-[#B99A58]/40 p-4 sm:p-6 text-center select-none">
       <div class="flex items-center justify-between pb-3">
         <span id="lightbox-counter" class="font-sans text-xs text-[#B99A58]">Frame 1 / 27</span>
-        <button type="button" onclick="closeAllModals()" aria-label="Close Lightbox" class="min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center">✕</button>
+        <button type="button" onclick="closeAllModals()" aria-label="Close Lightbox"
+          class="min-w-[44px] min-h-[44px] rounded-lg bg-[#42131B] border border-[#B99A58]/30 text-[#E4D2A8] flex items-center justify-center">✕</button>
       </div>
 
-      <div id="lightbox-visual-stage" class="rounded-lg overflow-hidden bg-[#42131B]/40 border border-[#B99A58]/25 min-h-[260px] sm:min-h-[380px] flex flex-col items-center justify-center p-6"></div>
+      <div id="lightbox-visual-stage"
+        class="rounded-lg overflow-hidden bg-[#42131B]/40 border border-[#B99A58]/25 min-h-[260px] sm:min-h-[380px] flex flex-col items-center justify-center p-6">
+      </div>
 
       <div class="mt-4 flex items-center justify-between gap-3">
-        <button type="button" onclick="stepLightbox(-1)" class="min-h-[44px] px-4 rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] font-sans text-xs font-medium">
+        <button type="button" onclick="stepLightbox(-1)"
+          class="min-h-[44px] px-4 rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] font-sans text-xs font-medium">
           ← Previous
         </button>
         <p id="lightbox-caption" class="text-xs sm:text-sm text-[#F4EEE3] font-sans"></p>
-        <button type="button" onclick="stepLightbox(1)" class="min-h-[44px] px-4 rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] font-sans text-xs font-medium">
+        <button type="button" onclick="stepLightbox(1)"
+          class="min-h-[44px] px-4 rounded-lg bg-[#42131B] border border-[#B99A58]/35 text-[#E4D2A8] font-sans text-xs font-medium">
           Next →
         </button>
       </div>
@@ -1599,7 +1840,9 @@
   </div>
 
   <!-- Non-Intrusive Toast Notification -->
-  <div id="sacred-toast" class="fixed top-20 left-1/2 -translate-x-1/2 z-50 hidden px-4 py-2 rounded-lg bg-[#42131B] border border-[#B99A58]/50 text-[#E4D2A8] font-sans text-xs"></div>
+  <div id="sacred-toast"
+    class="fixed top-20 left-1/2 -translate-x-1/2 z-50 hidden px-4 py-2 rounded-lg bg-[#42131B] border border-[#B99A58]/50 text-[#E4D2A8] font-sans text-xs">
+  </div>
 
   <!-- =========================================================================
        CENTRALIZED CONFIG & INTERACTIVE APPLICATION LOGIC
@@ -1641,11 +1884,11 @@
         {
           time: "06:20 PM",
           title: "Choir Competition Performances",
-          detail: "Participating choirs present 2 sacred Christmas carols each (7–9 minutes stage slot) proclaiming the birth of Jesus Christ."
+          detail: "Participating choirs present sacred Christmas carols (7–9 minutes stage slot) proclaiming the birth of Jesus Christ."
         },
         {
           time: "08:30 PM",
-          title: "Inter-Religious & Community Carol Sing-Along",
+          title: "Community Carol Sing-Along",
           detail: "All choirs and parish families unite in multilingual Christmas hymns in English, Konkani, and Kannada."
         },
         {
@@ -1666,8 +1909,8 @@
         {
           year: "2025",
           tag: "2025 Grand Parish Carols",
-          title: "Inter-Religious & Ecumenical Carols Stage (2K25)",
-          desc: "Stage celebration at OLPS Church, Dharwad in collaboration with Inter-Religious Commission, Ecumenical Commission, Samarasa Vedike & Sadhana HRC.",
+          title: "Ecumenical Carols Stage (2K25)",
+          desc: "Stage celebration at OLPS Church, Dharwad .",
           span: "md:col-span-5",
           slotIndex: 1
         },
@@ -1909,7 +2152,7 @@
       if (mode === "2026") {
         btn2026.className = "min-h-[34px] px-2.5 sm:px-3 rounded-md text-[11px] font-sans font-semibold bg-[#B99A58] text-[#17110F] transition-colors";
         btnAnnual.className = "min-h-[34px] px-2.5 sm:px-3 rounded-md text-[11px] font-sans font-medium text-[#E4D2A8] hover:text-[#F4EEE3] transition-colors";
-        heroBadge.textContent = "Here is Kristanjali Season 3 • 2K26 Edition";
+        heroBadge.textContent = "Here is Kristanjali • 2K26 Edition";
         heroDatePill.innerHTML = `
           <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#B99A58]/25 text-left md:text-center">
             <div class="p-4 sm:p-5 flex flex-col justify-center">
@@ -2120,9 +2363,8 @@
         const active = i === activeIdx;
         return `
           <li class="pl-6 relative">
-            <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full ${
-              active ? "bg-[#B99A58] ring-4 ring-[#B99A58]/20" : "bg-[#26090E] border border-[#B99A58]"
-            }"></span>
+            <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full ${active ? "bg-[#B99A58] ring-4 ring-[#B99A58]/20" : "bg-[#26090E] border border-[#B99A58]"
+          }"></span>
             <button type="button" onclick="renderEveningSchedule(${i})" class="w-full text-left group">
               <div class="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
                 <span class="font-sans text-xs font-semibold text-[#B99A58]">${item.time}</span>
@@ -2661,4 +2903,5 @@
     });
   </script>
 </body>
+
 </html>
