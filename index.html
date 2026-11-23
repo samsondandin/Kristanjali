@@ -3006,7 +3006,10 @@
 
     function dismissConciergeTeaser() {
       const teaser = document.getElementById("concierge-teaser-bubble");
-      if (teaser) teaser.classList.add("hidden");
+
+      if (teaser) {
+        teaser.classList.add("hidden");
+      }
     }
 
     function appendConciergeBubble(text, sender = "bot") {
